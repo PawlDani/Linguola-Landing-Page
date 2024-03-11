@@ -1,7 +1,7 @@
 // src/components/GroupBenefits/GroupBenefits.module.scss
 @import "../../styles/variables.scss";
 
-.group {
+.business {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,19 +10,19 @@
   margin-bottom: 140px;
   padding: 20px 0;
 
-  .groupContent {
+  .businessContent {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
 
-  .groupHeader {
+  .businessHeader {
     display: flex;
     align-self: center;
     margin-bottom: 50px;
 
-    .groupHeaderText {
+    .businessHeaderText {
       font-size: $h2FontSize;
       font-family: $mainFontFamily;
       color: $textColor;
@@ -32,7 +32,7 @@
     }
   }
 
-  .groupBenefits {
+  .businessBenefits {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -40,7 +40,7 @@
     gap: 80px;
     flex-wrap: wrap;
 
-    .groupBenefitsSingle {
+    .businessBenefitsSingle {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -59,7 +59,7 @@
         width: auto;
       }
 
-      .groupBenefitsSingleHeader {
+      .businessBenefitsSingleHeader {
         font-size: $h3FontSize;
         font-family: $mainFontFamily;
         color: $textColor;
@@ -72,7 +72,7 @@
         text-align: center;
       }
 
-      .groupBenefitsSingleDescription {
+      .businessBenefitsSingleDescription {
         font-size: $descriptionFontSize;
         font-family: $mainFontFamily;
         color: $textColor;
@@ -87,9 +87,9 @@
 }
 
 @media (max-width: 768px) {
-  .groupBenefits {
+  .businessBenefits {
     flex-direction: column;
-    .groupBenefitsSingle {
+    .businessBenefitsSingle {
       flex-basis: 100%; // Adjust for mobile responsiveness
     }
   }

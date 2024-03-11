@@ -104,6 +104,23 @@
         font-size: math.div($h2FontSize, 1.5); // Reduce the font size by 33%
       }
     }
+
+    @media (max-width: 768px) {
+      max-width: 200px;
+
+      button {
+        padding: 10px 10px;
+        font-size: math.div($h2FontSize, 1.7); // Reduce the font size by 33%
+      }
+
+      h1 {
+        font-size: math.div($h1FontSize, 1.6); // Reduce the font size by 20%
+      }
+
+      p {
+        font-size: math.div($h2FontSize, 1.6); // Reduce the font size by 20%
+      }
+    }
   }
 }
 

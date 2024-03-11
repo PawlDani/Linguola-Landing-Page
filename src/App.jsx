@@ -8,6 +8,9 @@ import IndividualBenefits from "./components/IndividualCourseBenefits/Individual
 import GroupCourse from "./components/GroupCourseSection/GroupCourse";
 import GroupBenefits from "./components/GroupCourseBenefits/GroupBenefits";
 import BusinessCourse from "./components/BusinessCourseSection/BusinessCourse";
+import BusinessBenefits from "./components/BusinessCourseBenefits/BusinessBenefits";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
       <GroupCourse />
       <GroupBenefits />
       <BusinessCourse />
+      <BusinessBenefits />
+      <Contact />
+      <Footer />
     </div>
   );
 }

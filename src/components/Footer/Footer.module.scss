@@ -1,0 +1,69 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  padding: 40px 0;
+  background-color: $mainColor;
+  color: $alternativeTextColor;
+  font-family: $mainFontFamily;
+
+  .footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .footerLinks {
+    display: flex;
+    align-items: center;
+
+    .footerLink {
+      margin-right: 25px;
+      color: $alternativeTextColor;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $textColor;
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .footerSocials {
+    a {
+      margin: 0 10px;
+      color: inherit;
+      font-size: 24px; // Adjust size as needed
+
+      &:hover {
+        color: $textColor;
+      }
+    }
+  }
+
+  .footerCopy {
+    margin-top: 20px;
+    p {
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      order: 99; // Ensures copyright is at the bottom
+    }
+  }
+}

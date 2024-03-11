@@ -1,0 +1,130 @@
+@import "../../styles/variables.scss";
+
+.contactSection {
+  margin-bottom: 140px;
+  font-family: $mainFontFamily;
+
+  .contactContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .formWrapper {
+    flex-basis: 50%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+
+      order: 1;
+    }
+  }
+
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+
+    .inputGroup,
+    .inputGroupSplit {
+      margin-bottom: 20px;
+    }
+
+    .inputGroupSplit {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      input {
+        width: 48%; // Spacing for 2 inputs in one row
+      }
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ccc;
+      background-color: #f2f2f2;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      font-size: 16px;
+
+      &:focus {
+        border-color: $mainColor;
+        outline: none; // remove the default outline
+      }
+
+      &::placeholder {
+        color: #888;
+      }
+    }
+
+    textarea {
+      height: 150px;
+      resize: vertical;
+    }
+  }
+
+  .infoWrapper {
+    flex-basis: 40%;
+    color: $textColor;
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: $h2FontSize;
+      color: $mainColor;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: $descriptionFontSize;
+    }
+
+    .contactInfo {
+      .infoItem {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        // hover scale effect
+        transition: transform 0.3s ease-in-out;
+
+        a {
+          display: flex; // make the a tag a flex container
+          align-items: center; // center the items vertically
+          color: $textColor;
+          text-decoration: none;
+
+          &:hover {
+            transform: scale(1.05);
+            color: $mainColor;
+            text-decoration: underline;
+          }
+        }
+
+        .icon {
+          margin-right: 10px;
+          font-size: $textFontSize;
+        }
+      }
+    }
+  }
+
+  button {
+    border: none;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+  }
+}
+
+// Media queries for responsiveness
+@media (max-width: 768px) {
+  // Adjust styles for mobile if needed
+}

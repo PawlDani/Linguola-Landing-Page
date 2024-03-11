@@ -62,3 +62,60 @@
     }
   }
 }
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  color: $mainColor;
+  font-size: 24px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.navigation {
+  @media (max-width: 768px) {
+    visibility: hidden; // Start hidden
+    opacity: 0; // Fully transparent
+    display: flex; // Always use flex, but control visibility via opacity & visibility
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    top: 80px; // Height of the header, remains unchanged
+    left: 0;
+    background: $backgroundColor;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    transition: visibility 0s linear 0.5s, opacity 0.5s ease,
+      transform 0.5s ease;
+
+    .navUl {
+      display: flex;
+      flex-direction: column;
+      align-items: center; // This centers the items vertically in the flex container
+      justify-content: center;
+      width: 100%;
+
+      .navigationItem {
+        padding: 10px;
+        width: 100%;
+
+        .navigationLink {
+          padding: 10px;
+          display: block;
+          border-bottom: none !important;
+        }
+      }
+    }
+  }
+}
+
+.navActive {
+  visibility: visible; // Make visible
+  opacity: 1; // Fully opaque
+  transform: translateY(0); // Slide into view
+  transition-delay: 0s; // Apply transition immediately when becoming visible
+}
