@@ -1,0 +1,96 @@
+// src/components/GroupBenefits/GroupBenefits.module.scss
+@import "../../styles/variables.scss";
+
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #fbf7f0; // Adjust the background color if needed
+  margin-bottom: 140px;
+  padding: 20px 0;
+
+  .groupContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .groupHeader {
+    display: flex;
+    align-self: center;
+    margin-bottom: 50px;
+
+    .groupHeaderText {
+      font-size: $h2FontSize;
+      font-family: $mainFontFamily;
+      color: $textColor;
+      padding: 0 0 10px 0;
+      margin-bottom: 30px;
+      border-bottom: 4px solid $textColor;
+    }
+  }
+
+  .groupBenefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+
+    .groupBenefitsSingle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 340px;
+      max-width: 400px;
+      flex: 1;
+      margin: 20px 0 10px 0;
+      text-align: center;
+
+      .checkmark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        height: 100px;
+        width: auto;
+      }
+
+      .groupBenefitsSingleHeader {
+        font-size: $h3FontSize;
+        font-family: $mainFontFamily;
+        color: $textColor;
+        font-weight: bold;
+        padding: 10px 0;
+        margin-bottom: 10px;
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .groupBenefitsSingleDescription {
+        font-size: $descriptionFontSize;
+        font-family: $mainFontFamily;
+        color: $textColor;
+        padding: 10px;
+        line-height: 1.4;
+        min-height: 170px;
+        align-items: flex-start;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .groupBenefits {
+    flex-direction: column;
+    .groupBenefitsSingle {
+      flex-basis: 100%; // Adjust for mobile responsiveness
+    }
+  }
+}

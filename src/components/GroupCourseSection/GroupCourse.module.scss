@@ -1,0 +1,113 @@
+@import "../../styles/variables.scss";
+
+.groupCourse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 140px;
+  padding: 30px 0;
+  font-family: $mainFontFamily;
+
+  .groupCourseContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .groupCourseImage {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      min-width: 440px;
+
+      img {
+        width: auto;
+
+        border-radius: $imageBorderRadius;
+      }
+    }
+
+    .groupCourseTypes {
+      display: flex;
+      flex-direction: column;
+      flex: 2;
+      margin-left: 10px;
+
+      .groupCourseHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 15px 20px;
+
+        h2 {
+          font-size: $h2FontSize;
+          color: $textColor;
+          margin-bottom: 1rem;
+          font-size: $h3FontSize;
+          font-weight: bold;
+        }
+
+        p {
+          font-size: $descriptionFontSize;
+          color: $textColor;
+        }
+      }
+
+      .groupCoursePackages {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 15px;
+
+        .groupCoursePricing {
+          box-shadow: none;
+          text-align: right;
+        }
+      }
+      .groupCourseLanguages {
+        padding: 20px 15px;
+        .languages {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          p {
+            display: flex;
+            align-items: center;
+            font-size: $descriptionFontSize;
+
+            .flag {
+              width: auto;
+              height: 40px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+      .groupCoursePackages,
+      .groupCoursePricing,
+      .groupCourseLanguages {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: $borderRadius;
+
+        h3 {
+          font-size: $h3FontSize;
+          font-weight: bold;
+          color: $mainColor;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: $descriptionFontSize;
+          color: $textColor;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .groupCourseBtn {
+        margin-top: 20px;
+        text-align: center;
+        padding-top: 25px;
+      }
+    }
+  }
+}

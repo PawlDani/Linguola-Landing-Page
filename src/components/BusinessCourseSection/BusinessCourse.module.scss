@@ -1,0 +1,117 @@
+@import "../../styles/variables.scss";
+
+.businessCourse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 140px;
+  padding: 30px 0;
+}
+
+.businessCourseContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: $mainFontFamily;
+
+  .businessCourseImage {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 440px;
+
+    img {
+      width: 100%; // Takes full width of its container
+      height: auto; // Maintains aspect ratio
+      max-height: 555px; // Prevents the image from exceeding the container's height
+      object-fit: cover; // Cover the container fully, possibly cutting off top/bottom or sides
+      object-position: center top;
+      border-radius: $imageBorderRadius;
+    }
+  }
+
+  .businessCourseTypes {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-left: 10px;
+
+    .businessCourseHeader {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 15px 20px;
+
+      h2 {
+        font-size: $h3FontSize;
+        font-weight: bold;
+        color: $textColor;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: $descriptionFontSize;
+        color: $textColor;
+      }
+    }
+
+    .businessCoursePackages {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 15px;
+
+      .businessCoursePricing {
+        box-shadow: none;
+        text-align: right;
+      }
+    }
+    .businessCourseLanguages {
+      padding: 20px 15px;
+      .languages {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        p {
+          display: flex;
+          align-items: center;
+          font-size: $descriptionFontSize;
+
+          .flag {
+            width: auto;
+            height: 40px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .businessCoursePackages,
+    .businessCoursePricing,
+    .businessCourseLanguages {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: $borderRadius;
+
+      h3 {
+        font-size: $h3FontSize;
+        font-weight: bold;
+        color: $mainColor;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: $descriptionFontSize;
+        color: $textColor;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .businessCourseBtn {
+      margin-top: 20px;
+      text-align: center;
+      padding-top: 10px;
+    }
+  }
+}
+
+

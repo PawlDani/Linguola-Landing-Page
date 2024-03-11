@@ -1,0 +1,64 @@
+// src/components/Header/Header.module.scss
+@use "sass:color";
+@import "../../styles/variables.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  background: $backgroundColor;
+  position: fixed;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.headerLogo {
+  max-height: 80px;
+  width: auto;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.navigation .navUl {
+  display: flex;
+
+  .navigationItem {
+    padding: 0 40px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    .navigationLink {
+      text-align: center;
+      text-transform: uppercase;
+      border-bottom: 4px solid transparent;
+      text-decoration: none;
+      padding: 25px 0;
+      font-family: $mainFontFamily;
+      color: $mainColor;
+      font-size: $navbarFontSize;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+
+      &:hover,
+      &:active {
+        border-bottom: 4px solid $mainColor;
+        color: color.scale($mainColor, $lightness: -20%);
+      }
+    }
+  }
+}

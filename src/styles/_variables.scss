@@ -1,0 +1,30 @@
+// src/styles/_variables.scss
+
+// Colors
+$mainColor: #c3584f;
+$backgroundColor: white;
+$alternativeBackgroundColor: #f4f5f8;
+$iconColor: hsl(27, 31%, 43%);
+$textColor: rgb(64, 62, 62);
+$alternativeTextColor: #f4f5f8;
+$altBgColor: #fbf7f0;
+
+// Borders
+$borderRadius: 20px;
+$border: 1px solid $mainColor;
+$imageBorderRadius: 10px;
+
+// Borders for Buttons
+$buttonBorderRadius: 40px;
+
+// Fonts
+$mainFontFamily: "Roboto", sans-serif;
+
+// Font Sizes
+$h1FontSize: 5rem;
+$h2FontSize: 4rem;
+$h3FontSize: 3rem;
+$navbarFontSize: 2rem;
+$textFontSize: 2.5rem;
+$descriptionFontSize: 2rem;
+$benefitsHeaderFontSize: 3.5rem;

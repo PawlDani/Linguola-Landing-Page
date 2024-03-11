@@ -1,0 +1,98 @@
+@import "../../styles/variables.scss";
+
+.individual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #fbf7f0;
+  margin-bottom: 140px;
+  padding: 20px 0;
+
+  .individualContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .individualHeader {
+    display: flex;
+    align-self: center;
+    margin-bottom: 50px;
+
+    .individualHeaderText {
+      font-size: $h2FontSize;
+      font-family: $mainFontFamily;
+      color: $textColor;
+      padding: 0 0 10px 0;
+      margin-bottom: 30px;
+      border-bottom: 4px solid $textColor;
+    }
+  }
+
+  .individualBenefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+
+  .individualBenefitsSingle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 340px;
+    max-width: 400px;
+    flex: 1;
+    margin: 20px 0 10px 0;
+    text-align: center;
+
+    .checkmark {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      height: 100px;
+      width: auto;
+    }
+
+    .individualBenefitsSingleHeader {
+      font-size: $h3FontSize;
+      font-family: $mainFontFamily;
+      color: $textColor;
+      font-weight: bold;
+      color: $textColor;
+      padding: 10px 0;
+      margin-bottom: 10px;
+      min-height: 100px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 315px;
+    }
+
+    .individualBenefitsSingleDescription {
+      font-size: $descriptionFontSize;
+      font-family: $mainFontFamily;
+      color: $textColor;
+      padding: 10px;
+      display: flex;
+      line-height: 1.4;
+      min-height: 170px;
+      align-items: flex-start;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .individualBenefits {
+    flex-direction: column;
+    .individualBenefitsSingle {
+      flex-basis: 100%;
+    }
+  }
+}

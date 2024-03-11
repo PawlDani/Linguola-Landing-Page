@@ -1,0 +1,115 @@
+// src/components/Benefits/Benefits.module.scss
+@import "../../styles/variables.scss";
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 140px;
+
+  .benefitsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+    .benefitsHeader {
+      animation: slideInFromTop 0.8s ease-out forwards;
+      animation-delay: 0.3s;
+      opacity: 0;
+      will-change: opacity, transform;
+      text-align: center;
+      margin-bottom: 50px;
+
+      .benefitsTitle {
+        color: $textColor;
+        font-size: $h2FontSize;
+        font-family: $mainFontFamily;
+
+        .underline {
+          padding-bottom: 10px;
+          border-bottom: 3px solid currentColor; // Adjust thickness and color as needed
+        }
+      }
+    }
+
+    .benefitsBoxes {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .box {
+        animation: fadeInUp 0.8s ease-out forwards;
+        opacity: 0;
+        will-change: opacity, transform;
+        max-width: 300px; /* Adjust as needed */
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 25px;
+        // border-radius: $borderRadius;
+        // box-shadow: 3px 6px 9px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+        color: $textColor;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        .icon {
+          font-size: 4rem;
+          color: inherit; // Optionally, ensures the icon color matches the text color or another preferred color
+        }
+
+        .boxHeader {
+          font-size: $h3FontSize;
+          font-family: $mainFontFamily;
+          text-align: center;
+        }
+
+        .boxDescription {
+          font-size: $descriptionFontSize;
+          font-family: $mainFontFamily;
+          text-align: center;
+          line-height: 1.4;
+        }
+      }
+
+      .box:nth-child(1) {
+        animation-delay: 0.2s;
+      }
+      .box:nth-child(2) {
+        animation-delay: 0.4s;
+      }
+      .box:nth-child(3) {
+        animation-delay: 0.6s;
+      }
+      .box:nth-child(4) {
+        animation-delay: 0.8s;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px); /* Start slightly lower */
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideInFromTop {
+        from {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

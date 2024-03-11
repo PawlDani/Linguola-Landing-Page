@@ -1,0 +1,44 @@
+// src/components/Button/Button.module.scss
+@import "../../styles/variables.scss";
+
+.btn {
+  text-decoration: none;
+  margin: auto 0;
+  display: inline-block;
+  text-align: center;
+  font-family: $mainFontFamily;
+}
+
+.btn-primary {
+  font-size: 2.5rem;
+
+  color: $backgroundColor;
+  padding: 15px 80px;
+  border-radius: $buttonBorderRadius;
+  border: $border;
+  background-color: $mainColor;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken($mainColor, 10%); // Adjusted for SCSS
+    transform: scale(1.05);
+  }
+}
+
+.btn-secondary {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: $mainColor;
+  padding: 15px;
+  border-radius: $buttonBorderRadius;
+  border: $border;
+  background-color: $backgroundColor;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken($backgroundColor, 10%); // Adjusted for SCSS
+    transform: scale(1.05);
+  }
+}

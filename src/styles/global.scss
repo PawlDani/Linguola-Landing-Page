@@ -1,0 +1,12 @@
+@import "_reset.scss";
+@import "_variables.scss";
+
+.container {
+  max-width: 1352px; // This is the maximum width it can expand to.
+  width: 100%; // This makes it flexible for smaller screens.
+  margin: 0 auto; // Centers the container.
+}
+
+body {
+  background-color: $backgroundColor;
+}

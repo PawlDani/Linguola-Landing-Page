@@ -1,0 +1,137 @@
+// src/components/Hero/Hero.module.scss
+@use "sass:math";
+@import "../../styles/variables.scss"; // Import variables
+
+.heroWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  background-image: url("../../assets/heroBackground.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+  height: 80vh;
+  width: 100%;
+  margin-top: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw; // 60% of the viewport width
+    height: 100%;
+    background-color: rgba(
+      213,
+      175,
+      142,
+      0.845
+    ); // Peach color with transparency
+    clip-path: polygon(
+      0 0,
+      80% 0,
+      100% 100%,
+      0% 100%
+    ); // Create a diagonal edge
+
+    @media (max-width: 1400px) {
+      width: 50vw; // Adjust as needed
+    }
+  }
+
+  .heroImage {
+    max-width: 90%;
+    border-radius: $imageBorderRadius;
+  }
+
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; // Vertically center the content
+    align-items: flex-start; // Align content to the left
+    padding-left: 20px; // Add some padding on the left if needed
+  }
+
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    animation: slideInFromTop 0.8s ease-out forwards;
+    max-width: 410px;
+    gap: 20px;
+    font-family: $mainFontFamily;
+
+    h1,
+    .upperText {
+      text-transform: uppercase;
+      margin-bottom: 20px; // Adjust based on your design needs
+    }
+
+    h1 {
+      font-size: $h1FontSize;
+
+      color: $alternativeTextColor;
+    }
+
+    p {
+      color: $mainColor;
+      font-size: $h2FontSize;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 1200px) {
+      max-width: 340px;
+      h1 {
+        font-size: math.div($h1FontSize, 1.2); // Reduce the font size by 20%
+      }
+
+      p {
+        font-size: math.div($h2FontSize, 1.2); // Reduce the font size by 20%
+      }
+    }
+
+    @media (max-width: 900px) {
+      max-width: 270px;
+      h1 {
+        font-size: math.div($h1FontSize, 1.5); // Reduce the font size by 33%
+      }
+
+      p {
+        font-size: math.div($h2FontSize, 1.5); // Reduce the font size by 33%
+      }
+    }
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hero {
+    height: auto;
+    min-height: 70vh;
+  }
+}

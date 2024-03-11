@@ -1,0 +1,86 @@
+@import "../../styles/variables.scss";
+
+.programs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 140px;
+}
+
+.programsContent {
+  display: flex;
+  gap: 20px;
+}
+
+.programsHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+
+  h2.programsHeaderText {
+    font-family: $mainFontFamily;
+    font-size: $h2FontSize;
+    color: $textColor;
+    margin-bottom: 70px;
+    border-bottom: 4px solid $textColor;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $imageBorderRadius;
+  }
+}
+
+.programsIndividual {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1.3;
+  gap: 2px;
+
+  .programsSingle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    // Border bottom as space divider
+    background: $mainColor;
+    border-radius: $borderRadius;
+
+    .programsSingleDescription {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 20px;
+      flex: 1.8;
+
+      h3.programsSingleHeader {
+        font-size: $h3FontSize;
+        font-family: $mainFontFamily;
+        color: $backgroundColor;
+        padding-bottom: 10px;
+        border-bottom: 4px solid $backgroundColor;
+      }
+
+      p.programsSingleText {
+        font-size: $descriptionFontSize;
+        font-family: $mainFontFamily;
+        color: $backgroundColor;
+        padding: 10px 0;
+        display: flex;
+        margin-top: 10px;
+      }
+    }
+
+    .programsSingleBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex: 1;
+      margin-right: 10px;
+    }
+  }
+}
