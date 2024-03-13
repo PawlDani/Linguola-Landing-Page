@@ -7,24 +7,23 @@ import germanyFlag from "../../assets/germany.png";
 import Button from "../Buttons/Button";
 
 function BusinessCourse() {
-
   const [currentImage, setCurrentImage] = useState(kursyBiznesoweImage);
 
-useEffect(() => {
-  const handleResize = () => {
-    if (window.innerWidth <= 950) {
-      setCurrentImage(kursyBiznesoweAlt);
-    } else {
-      setCurrentImage(kursyBiznesoweImage);
-    }
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 950) {
+        setCurrentImage(kursyBiznesoweAlt);
+      } else {
+        setCurrentImage(kursyBiznesoweImage);
+      }
+    };
 
-  window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
 
-  handleResize();
+    handleResize();
 
-  return () => window.removeEventListener("resize", handleResize);
-}, []);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <section className={styles.businessCourse} id="businessCourse">
@@ -53,8 +52,8 @@ useEffect(() => {
             </div>
             <div className={styles.businessCoursePricing}>
               <h3 className={styles.businessCoursePricingHeader}>CENA</h3>
-              <p>120.00 PLN/os.</p>
-              <p>70.00 PLN/os.</p>
+              <p>120.00 zł</p>
+              <p>70.00 zł</p>
             </div>
           </div>
           <div className={styles.businessCourseLanguages}>

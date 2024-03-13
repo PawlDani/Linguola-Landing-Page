@@ -1,19 +1,19 @@
-
 import React, { useState, useEffect } from "react";
 import styles from "./GroupCourse.module.scss";
-import groupCourseImage from "../../assets/groupcourse.png"; 
+import groupCourseImage from "../../assets/groupcourse.png";
 import groupCourseAlt from "../../assets/groupcourseAlt.png";
 import unitedKingdomFlag from "../../assets/united-kingdom.png";
 import germanyFlag from "../../assets/germany.png";
-import italyFlag from "../../assets/italy.png"; 
-import Button from "../Buttons/Button"; 
-
+import italyFlag from "../../assets/italy.png";
+import Button from "../Buttons/Button";
 
 function GroupCourse() {
   const [currentImage, setCurrentImage] = useState(groupCourseImage);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {
+      setWindowWidth(window.innerWidth);
       if (window.innerWidth <= 950) {
         setCurrentImage(groupCourseAlt);
       } else {
@@ -26,7 +26,7 @@ function GroupCourse() {
     handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
-  } , []);
+  }, []);
 
   return (
     <section className={styles.groupCourse} id="groupCourse">
@@ -47,16 +47,46 @@ function GroupCourse() {
           <div className={styles.groupCoursePackages}>
             <div className={styles.groupCoursePackage}>
               <h3 className={styles.groupCoursePackageHeader}>PAKIET</h3>
-              <p>Kurs podstawowy - od 0</p>
-              <p>Kurs średniozaawansowany - B1</p>
-              <p>Kurs zaawansowany - 
-               B2 i wyżej</p>
+
+              {windowWidth <= 435 ? (
+                <>
+                  <p>
+                    Kurs podstawowy <br></br> [od 0]
+                  </p>
+                  <br></br>
+                  <p>Kurs średniozaawansowany
+                    <br></br> [poziom - B1]</p>
+                  <br></br>
+                  <p>Kurs zaawansowany <br></br> [B2 i wyżej]</p>
+                </>
+              ) : (
+                <>
+                  <p>Kurs podstawowy - od 0</p>
+                  <p>Kurs średniozaawansowany - B1</p>
+                  <p>Kurs zaawansowany - B2 i wyżej</p>
+                </>
+              )}
             </div>
             <div className={styles.groupCoursePricing}>
               <h3 className={styles.groupCoursePricingHeader}>CENA</h3>
-              <p>55.00 PLN/os.</p>
-              <p>65.00 PLN/os.</p>
-              <p>70.00 PLN/os.</p>
+
+              {windowWidth <= 435 ? (
+                <>
+                  <p>55.00 zł</p>
+                  <br></br>
+                  <br></br>
+                  <p>65.00 zł</p>
+                  <br></br>
+                  <br></br>
+                  <p>70.00 zł</p>
+                </>
+              ) : (
+                <>
+                  <p>55.00 zł/os.</p>
+                  <p>65.00 zł/os.</p>
+                  <p>70.00 zł/os.</p>
+                </>
+              )}
             </div>
           </div>
           <div className={styles.groupCourseLanguages}>

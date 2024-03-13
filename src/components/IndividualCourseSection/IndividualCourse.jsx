@@ -55,9 +55,11 @@ function IndividualCourse() {
                   <p>
                     Jednorazowe zajęcia <br></br> [60 min]
                   </p>
+                  <br></br>
                   <p>
                     Kurs miesięczny <br></br> [4 spotkania po 60 min]
                   </p>
+                  <br></br>
                   <p>
                     Kurs kwartalny<br></br> [12 spotkań po 60 min]
                   </p>
@@ -76,7 +78,9 @@ function IndividualCourse() {
                 <>
                   <p>100 zł </p>
                   <br></br>
+                  <br></br>
                   <p>390 zł</p>
+                  <br></br>
                   <br></br>
                   <p>1100 zł</p>
                 </>
