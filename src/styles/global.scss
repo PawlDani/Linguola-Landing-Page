@@ -6,6 +6,14 @@
   width: 100%; // This makes it flexible for smaller screens.
   margin: 0 auto; // Centers the container.
   padding: 0 20px;
+
+  @media (max-width: 1200px) {
+    max-width: 1100px;
+  }
+
+  @media (max-width: 1100px) {
+    max-width: 1000px;
+  }
 }
 
 body {

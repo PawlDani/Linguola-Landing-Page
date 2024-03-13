@@ -1,28 +1,48 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./BusinessCourse.module.scss";
-import kursyBiznesoweImage from "../../assets/kursyBiznesowe.png"; // Ensure correct path
-import unitedKingdomFlag from "../../assets/united-kingdom.png"; // Ensure correct path
-import germanyFlag from "../../assets/germany.png"; // Ensure correct path
-import Button from "../Buttons/Button"; // Adjust path as necessary
+import kursyBiznesoweImage from "../../assets/kursyBiznesowe.png";
+import kursyBiznesoweAlt from "../../assets/kursyBiznesoweAlt.png";
+import unitedKingdomFlag from "../../assets/united-kingdom.png";
+import germanyFlag from "../../assets/germany.png";
+import Button from "../Buttons/Button";
 
 function BusinessCourse() {
+
+  const [currentImage, setCurrentImage] = useState(kursyBiznesoweImage);
+
+useEffect(() => {
+  const handleResize = () => {
+    if (window.innerWidth <= 950) {
+      setCurrentImage(kursyBiznesoweAlt);
+    } else {
+      setCurrentImage(kursyBiznesoweImage);
+    }
+  };
+
+  window.addEventListener("resize", handleResize);
+
+  handleResize();
+
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
+
   return (
     <section className={styles.businessCourse} id="businessCourse">
       <div className={`${styles.businessCourseContent} container`}>
         <div className={styles.businessCourseImage}>
-          <img src={kursyBiznesoweImage} alt="Business Courses" />
+          <img src={currentImage} alt="Business Courses" />
         </div>
         <div className={styles.businessCourseTypes}>
           <div className={styles.businessCourseHeader}>
-            <h2 className={styles.businessCourseHeaderText}>
+            <h3 className={styles.businessCourseHeaderText}>
               JĘZYKI SPECJALISTYCZNE - KURSY BIZNESOWE
-            </h2>
+            </h3>
             <p className={styles.businessCourseHeaderDescription}>
               Kursy języka specjalistycznego dostępne są w formie zajęć
-              indywidualnych i grupowych. <br></br>       Zajęcia obejmują różnorodne aspekty
-              biznesu, w tym szeroko pojętą komunikację biznesową z obszarów
-              takich jak finanse, logistyka, handel, marketing, zarządzanie i
-              obsługa klienta.
+              indywidualnych i grupowych. <br></br> Zajęcia obejmują różnorodne
+              aspekty biznesu, w tym szeroko pojętą komunikację biznesową z
+              obszarów takich jak finanse, logistyka, handel, marketing,
+              zarządzanie i obsługa klienta.
             </p>
           </div>
           <div className={styles.businessCoursePackages}>

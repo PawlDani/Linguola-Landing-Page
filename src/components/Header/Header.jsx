@@ -1,5 +1,5 @@
-// src/components/Header/Header.jsx
 import React, { useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 import styles from "./Header.module.scss";
 import logo from "../../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,9 +20,14 @@ function Header() {
     <header className={styles.header}>
       <div className={`${styles.headerContainer} container`}>
         <div className={styles.headerLogoBox}>
-          <a href="/">
+          <ScrollLink
+            to="hero"
+            className={styles.headerLogoLink}
+            smooth={true}
+            duration={1500}
+          >
             <img src={logo} alt="Logo" className={styles.headerLogo} />
-          </a>
+          </ScrollLink>
         </div>
         <button className={styles.burger} onClick={toggleMenu}>
           <FontAwesomeIcon icon={faBars} />
@@ -34,36 +39,51 @@ function Header() {
         >
           <ul className={styles.navUl}>
             <li className={styles.navigationItem}>
-              <a href="#" className={styles.navigationLink} onClick={closeMenu}>
+              {/* Assuming "Start" refers to the top of the page or a specific section */}
+              <ScrollLink
+                to="hero"
+                className={styles.navigationLink}
+                smooth={true}
+                duration={1500}
+                onClick={closeMenu}
+              >
                 Start
-              </a>
+              </ScrollLink>
             </li>
             <li className={styles.navigationItem}>
-              <a
-                href="#team"
+              <ScrollLink
+                to="benefits"
                 className={styles.navigationLink}
+                smooth={true}
+                duration={1500}
                 onClick={closeMenu}
+                offset={-100}
               >
                 O nas
-              </a>
+              </ScrollLink>
             </li>
             <li className={styles.navigationItem}>
-              <a
-                href="#programs"
+              <ScrollLink
+                to="programs"
                 className={styles.navigationLink}
+                smooth={true}
+                duration={1500}
                 onClick={closeMenu}
+                offset={-100}
               >
                 Oferta
-              </a>
+              </ScrollLink>
             </li>
             <li className={styles.navigationItem}>
-              <a
-                href="#kontakt"
+              <ScrollLink
+                to="contact"
                 className={styles.navigationLink}
+                smooth={true}
+                duration={1500}
                 onClick={closeMenu}
               >
                 Kontakt
-              </a>
+              </ScrollLink>
             </li>
           </ul>
         </nav>

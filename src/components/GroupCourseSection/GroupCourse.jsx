@@ -1,22 +1,42 @@
-// src/components/GroupCourse/GroupCourse.jsx
-import React from "react";
+
+import React, { useState, useEffect } from "react";
 import styles from "./GroupCourse.module.scss";
-import groupCourseImage from "../../assets/groupcourse.png"; // Ensure correct path
-import unitedKingdomFlag from "../../assets/united-kingdom.png"; // Ensure correct path
-import germanyFlag from "../../assets/germany.png"; // Ensure correct path
-import italyFlag from "../../assets/italy.png"; // Ensure correct path
-import Button from "../Buttons/Button"; // Adjust path as necessary
+import groupCourseImage from "../../assets/groupcourse.png"; 
+import groupCourseAlt from "../../assets/groupcourseAlt.png";
+import unitedKingdomFlag from "../../assets/united-kingdom.png";
+import germanyFlag from "../../assets/germany.png";
+import italyFlag from "../../assets/italy.png"; 
+import Button from "../Buttons/Button"; 
+
 
 function GroupCourse() {
+  const [currentImage, setCurrentImage] = useState(groupCourseImage);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 950) {
+        setCurrentImage(groupCourseAlt);
+      } else {
+        setCurrentImage(groupCourseImage);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  } , []);
+
   return (
     <section className={styles.groupCourse} id="groupCourse">
       <div className={`${styles.groupCourseContent} container`}>
         <div className={styles.groupCourseImage}>
-          <img src={groupCourseImage} alt="Group Courses" />
+          <img src={currentImage} alt="Group Courses" />
         </div>
         <div className={styles.groupCourseTypes}>
           <div className={styles.groupCourseHeader}>
-            <h2 className={styles.groupCourseHeaderText}>KURSY GRUPOWE</h2>
+            <h3 className={styles.groupCourseHeaderText}>KURSY GRUPOWE</h3>
             <p className={styles.groupCourseHeaderDescription}>
               Kursy grupowe, gdzie nauka staje się interaktywną przygodą w
               małych, zgranych grupach! Intensywne zajęcia gwarantują szybkie
@@ -28,8 +48,9 @@ function GroupCourse() {
             <div className={styles.groupCoursePackage}>
               <h3 className={styles.groupCoursePackageHeader}>PAKIET</h3>
               <p>Kurs podstawowy - od 0</p>
-              <p>Kurs średniozaawansowany - poziom B1</p>
-              <p>Kurs zaawansowany - poziom B2 i wyżej</p>
+              <p>Kurs średniozaawansowany - B1</p>
+              <p>Kurs zaawansowany - 
+               B2 i wyżej</p>
             </div>
             <div className={styles.groupCoursePricing}>
               <h3 className={styles.groupCoursePricingHeader}>CENA</h3>

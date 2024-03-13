@@ -1,34 +1,53 @@
-// src/components/Footer/Footer.jsx
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 import styles from "./Footer.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faFacebookF,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={`${styles.footerContainer} container`}>
         <div className={styles.footerLinks}>
-          <a href="/" className={styles.footerLink}>
+          {/* Update these links to use ScrollLink for in-page navigation */}
+          <ScrollLink
+            to="hero"
+            className={styles.footerLink}
+            smooth={true}
+            duration={1500}
+          >
             Start
-          </a>
-          <a href="/about" className={styles.footerLink}>
+          </ScrollLink>
+          <ScrollLink
+            to="benefits"
+            className={styles.footerLink}
+            smooth={true}
+            duration={1500}
+            offset={-100}
+          >
             O nas
-          </a>
-          <a href="/services" className={styles.footerLink}>
+          </ScrollLink>
+          <ScrollLink
+            to="programs"
+            className={styles.footerLink}
+            smooth={true}
+            duration={1500}
+            offset={-100}
+          >
             Oferta
-          </a>
-          <a href="/contact" className={styles.footerLink}>
+          </ScrollLink>
+          <ScrollLink
+            to="contact"
+            className={styles.footerLink}
+            smooth={true}
+            duration={1500}
+          >
             Kontakt
-          </a>
+          </ScrollLink>
         </div>
         <div className={styles.footerSocials}>
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/profile.php?id=61555399645470"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialLink}

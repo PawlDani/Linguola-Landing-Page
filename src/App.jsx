@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Hero from "./components/HeroSection/Hero";
 import Benefits from "./components/BenefitsSection/Benefits";
@@ -14,6 +15,7 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
+    <BrowserRouter>
     <div>
       <Header />
       <Hero />
@@ -28,6 +30,7 @@ function App() {
       <Contact />
       <Footer />
     </div>
+    </BrowserRouter>
   );
 }
 

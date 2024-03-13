@@ -6,6 +6,10 @@
   flex-direction: column;
   margin-bottom: 140px;
 
+  @media (max-width: 950px) {
+    margin-bottom: 80px;
+  }
+
   .benefitsContainer {
     display: flex;
     flex-direction: column;
@@ -24,6 +28,7 @@
         color: $textColor;
         font-size: $h2FontSize;
         font-family: $mainFontFamily;
+        
 
         .underline {
           padding-bottom: 10px;

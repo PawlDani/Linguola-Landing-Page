@@ -28,11 +28,18 @@ function Contact() {
         <div className={styles.infoWrapper}>
           <h2>Kontakt</h2>
           <p>
-          Jeśli potrzebujesz dodatkowych informacji, chciałbyś porozmawiać o kwestiach związanych z naszymi kursami językowymi lub masz inne pytania, skontaktuj się z nami za pomocą dostępnych danych kontaktowych.
+            Jeśli potrzebujesz dodatkowych informacji, chciałbyś porozmawiać o
+            kwestiach związanych z naszymi kursami językowymi lub masz inne
+            pytania, skontaktuj się z nami za pomocą dostępnych danych
+            kontaktowych.
           </p>
           <div className={styles.contactInfo}>
             <div className={styles.infoItem}>
-              <a href="https://wa.me/48530211105" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://wa.me/48530211105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faWhatsapp} className={styles.icon} />
                 <span>+48 530 211 105</span>
               </a>
@@ -41,16 +48,6 @@ function Contact() {
               <a href="mailto:info@linguola.pl">
                 <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
                 <span>info@linguola.pl</span>
-              </a>
-            </div>
-            <div className={styles.infoItem}>
-              <a
-                href="https://www.facebook.com/yourPage"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faFacebook} className={styles.icon} />
-                <span>https://www.facebook.com/linguola</span>
               </a>
             </div>
           </div>

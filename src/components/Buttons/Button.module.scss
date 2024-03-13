@@ -1,4 +1,5 @@
 // src/components/Button/Button.module.scss
+@use "sass:math";
 @import "../../styles/variables.scss";
 
 .btn {
@@ -18,6 +19,13 @@
   background-color: $mainColor;
   transition: transform 0.3s ease, background-color 0.3s ease;
 
+  @media (max-width: 1200px) {
+    font-size: math.div(
+      2.5rem,
+      1.4
+    ); // Reduce the font size by 20%
+  }
+
   &:hover {
     cursor: pointer;
     background-color: darken($mainColor, 10%); // Adjusted for SCSS
@@ -34,6 +42,10 @@
   border: $border;
   background-color: $backgroundColor;
   transition: transform 0.3s ease, background-color 0.3s ease;
+
+  @media (max-width: 1200px) {
+    font-size: 1rem; // Replace with the font size you want
+  }
 
   &:hover {
     cursor: pointer;

@@ -1,4 +1,3 @@
-// src/components/GroupBenefits/GroupBenefits.module.scss
 @import "../../styles/variables.scss";
 
 .group {
@@ -6,9 +5,13 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #fbf7f0; // Adjust the background color if needed
+  background-color: #fbf7f0;
   margin-bottom: 140px;
   padding: 20px 0;
+
+  @media (max-width: 950px) {
+    margin-bottom: 80px;
+  }
 
   .groupContent {
     display: flex;
@@ -40,47 +43,78 @@
     gap: 80px;
     flex-wrap: wrap;
 
-    .groupBenefitsSingle {
-      display: flex;
+    @media (max-width: 1220px) {
+      gap: 20px;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 1102px) {
       flex-direction: column;
+    }
+  }
+
+  .groupBenefitsSingle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 340px;
+    max-width: 400px;
+    flex: 1;
+    margin: 20px 0 10px 0;
+    text-align: center;
+
+    @media (max-width: 1220px) {
+      max-width: 100px;
+      margin: 0;
+    }
+
+    @media (max-width: 1102px) {
+      max-width: 70%;
+      margin: 10px auto;
+    }
+    .checkmark {
+      display: flex;
       align-items: center;
-      min-width: 340px;
-      max-width: 400px;
-      flex: 1;
-      margin: 20px 0 10px 0;
+      justify-content: center;
+      margin-bottom: 30px;
+      height: 100px;
+      width: auto;
+    }
+
+    .groupBenefitsSingleHeader {
+      font-size: $h3FontSize;
+      font-family: $mainFontFamily;
+      color: $textColor;
+      font-weight: bold;
+      padding: 10px 0;
+      margin-bottom: 10px;
+      min-height: 100px;
+      display: flex;
+      justify-content: center;
       text-align: center;
 
-      .checkmark {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 30px;
-        height: 100px;
+      @media (max-width: 1220px) {
         width: auto;
       }
 
-      .groupBenefitsSingleHeader {
-        font-size: $h3FontSize;
-        font-family: $mainFontFamily;
-        color: $textColor;
-        font-weight: bold;
-        padding: 10px 0;
-        margin-bottom: 10px;
-        min-height: 100px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+      @media (max-width: 1102px) {
+        min-height: auto;
       }
+    }
 
-      .groupBenefitsSingleDescription {
-        font-size: $descriptionFontSize;
-        font-family: $mainFontFamily;
-        color: $textColor;
-        padding: 10px;
-        line-height: 1.4;
-        min-height: 170px;
-        align-items: flex-start;
-        text-align: center;
+    .groupBenefitsSingleDescription {
+      font-size: $descriptionFontSize;
+      font-family: $mainFontFamily;
+      color: $textColor;
+      padding: 10px;
+      line-height: 1.4;
+      min-height: 170px;
+      align-items: flex-start;
+      text-align: center;
+
+      @media (max-width: 1102px) {
+        min-height: auto;
       }
     }
   }

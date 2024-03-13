@@ -1,23 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./IndividualCourse.module.scss";
-import kursyIndywidualneImage from "../../assets/kursyIndywidualne.png"; // Ensure correct path
-import unitedKingdomFlag from "../../assets/united-kingdom.png"; // Ensure correct path
-import germanyFlag from "../../assets/germany.png"; // Ensure correct path
-import italyFlag from "../../assets/italy.png"; // Ensure correct path
-import Button from "../Buttons/Button"; // Adjust path as necessary
+import kursyIndywidualneImage from "../../assets/kursyIndywidualne.png";
+import kursyIndywidualneAlt from "../../assets/kursyIndywidualneAlt.png";
+import unitedKingdomFlag from "../../assets/united-kingdom.png";
+import germanyFlag from "../../assets/germany.png";
+import italyFlag from "../../assets/italy.png";
+import Button from "../Buttons/Button";
 
 function IndividualCourse() {
+  const [currentImage, setCurrentImage] = useState(kursyIndywidualneImage);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      if (window.innerWidth <= 950) {
+        setCurrentImage(kursyIndywidualneAlt);
+      } else {
+        setCurrentImage(kursyIndywidualneImage);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section className={styles.individualCourse} id="individualCourse">
-    <div className={`${styles.individualCourseContent} container`}>
+      <div className={`${styles.individualCourseContent} container`}>
         <div className={styles.individualCourseImage}>
-          <img src={kursyIndywidualneImage} alt="Individual Courses" />
+          <img src={currentImage} alt="Individual Courses" />
         </div>
         <div className={styles.individualCourseTypes}>
           <div className={styles.individualCourseHeader}>
-            <h2 className={styles.individualCourseHeaderText}>
+            <h3 className={styles.individualCourseHeaderText}>
               KURSY INDYWIDUALNE
-            </h2>
+            </h3>
             <p className={styles.individualCourseHeaderDescription}>
               Kursy indywidualne, stworzone z myślą o Twoich unikalnych
               potrzebach językowych! Jeśli zależy Ci na płynnym wyrażaniu się,
@@ -28,15 +49,44 @@ function IndividualCourse() {
           <div className={styles.individualCoursePackages}>
             <div className={styles.individualCoursePackage}>
               <h3 className={styles.individualCoursePackageHeader}>PAKIET</h3>
-              <p>Jednorazowe zajęcia [60 min]</p>
-              <p>Kurs miesięczny [4 spotkania po 60 min]</p>
-              <p>Kurs kwartalny [12 spotkań po 60 min]</p>
+
+              {windowWidth <= 435 ? (
+                <>
+                  <p>
+                    Jednorazowe zajęcia <br></br> [60 min]
+                  </p>
+                  <p>
+                    Kurs miesięczny <br></br> [4 spotkania po 60 min]
+                  </p>
+                  <p>
+                    Kurs kwartalny<br></br> [12 spotkań po 60 min]
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p>Jednorazowe zajęcia [60 min]</p>
+                  <p>Kurs miesięczny [4 spotkania po 60 min]</p>
+                  <p>Kurs kwartalny [12 spotkań po 60 min]</p>
+                </>
+              )}
             </div>
             <div className={styles.individualCoursePricing}>
               <h3 className={styles.individualCoursePricingHeader}>CENA</h3>
-              <p>100 zł</p>
-              <p>390 zł</p>
-              <p>1100 zł</p>
+              {windowWidth <= 435 ? (
+                <>
+                  <p>100 zł </p>
+                  <br></br>
+                  <p>390 zł</p>
+                  <br></br>
+                  <p>1100 zł</p>
+                </>
+              ) : (
+                <>
+                  <p>100 zł</p>
+                  <p>390 zł</p>
+                  <p>1100 zł</p>
+                </>
+              )}
             </div>
           </div>
           <div className={styles.individualCourseLanguages}>

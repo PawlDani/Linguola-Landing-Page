@@ -1,12 +1,11 @@
 // src/components/Hero/Hero.jsx
 import React from "react";
 import styles from "./Hero.module.scss";
-import laptopHeroImage from "../../assets/laptopHero.png";
 import Button from "../Buttons/Button";
 
 function Hero() {
   return (
-    <section className={styles.heroWrapper}>
+    <section id="hero" className={styles.heroWrapper}>
       <article className={styles.hero}>
         <div className={`${styles.heroContainer} container`}>
           <div className={styles.heroContent}>
