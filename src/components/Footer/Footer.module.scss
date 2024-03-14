@@ -27,6 +27,7 @@
       margin-right: 25px;
       color: $alternativeTextColor;
       text-decoration: none;
+      font-size: 1.6rem;
       transition: color 0.3s ease;
       cursor: pointer;
 
@@ -46,10 +47,11 @@
   }
 
   .footerSocials {
+    font-size: 2.5rem;
     a {
       margin: 0 10px;
       color: inherit;
-      font-size: 24px; 
+      font-size: 2.5rem;
       &:hover {
         color: $textColor;
       }
@@ -57,13 +59,14 @@
   }
 
   .footerCopy {
+    font-size: 2.5rem;
     margin-top: 20px;
     p {
-      font-size: 14px;
+      font-size: 1.6rem;
     }
 
     @media (max-width: 768px) {
-      order: 99; 
+      order: 99;
     }
   }
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
 import styles from "./GroupCourse.module.scss";
 import groupCourseImage from "../../assets/groupcourse.png";
 import groupCourseAlt from "../../assets/groupcourseAlt.png";
@@ -54,10 +55,14 @@ function GroupCourse() {
                     Kurs podstawowy <br></br> [od 0]
                   </p>
                   <br></br>
-                  <p>Kurs średniozaawansowany
-                    <br></br> [poziom - B1]</p>
+                  <p>
+                    Kurs średniozaawansowany
+                    <br></br> [poziom - B1]
+                  </p>
                   <br></br>
-                  <p>Kurs zaawansowany <br></br> [B2 i wyżej]</p>
+                  <p>
+                    Kurs zaawansowany <br></br> [B2 i wyżej]
+                  </p>
                 </>
               ) : (
                 <>
@@ -120,12 +125,14 @@ function GroupCourse() {
               </p>
             </div>
             <div className={styles.groupCourseBtn}>
-              <Button
-                variant="primary"
-                onClick={() => (window.location.href = "#group")}
+              <ScrollLink
+                to="group"
+                smooth={true}
+                duration={1500}
+                offset={-100}
               >
-                CZYTAJ WIĘCEJ
-              </Button>
+                <Button variant="primary">CZYTAJ WIĘCEJ</Button>
+              </ScrollLink>
             </div>
           </div>
         </div>

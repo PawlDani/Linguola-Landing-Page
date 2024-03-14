@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Programs.module.scss";
-import ofertaImage from "../../assets/programs.png"; 
-import ofertaImageSmall from "../../assets/programsAlt.png"; 
-import Button from "../Buttons/Button"; 
+import ofertaImage from "../../assets/programs.png";
+import ofertaImageSmall from "../../assets/programsAlt.png";
+import { Link as ScrollLink } from "react-scroll";
+import Button from "../Buttons/Button";
 
 function Programs() {
   const [currentImage, setCurrentImage] = useState(ofertaImage);
 
-
   useEffect(() => {
     const handleResize = () => {
-     
       if (window.innerWidth <= 950) {
         setCurrentImage(ofertaImageSmall);
       } else {
@@ -18,16 +17,13 @@ function Programs() {
       }
     };
 
-    
     window.addEventListener("resize", handleResize);
-
 
     handleResize();
 
-   
     return () => window.removeEventListener("resize", handleResize);
-  }, []); 
-  
+  }, []);
+
   return (
     <section className={styles.programs} id="programs">
       <div className={`${styles.programsContent} container`}>
@@ -49,12 +45,14 @@ function Programs() {
                 </p>
               </div>
               <div className={styles.programsSingleBtn}>
-                <Button
-                  variant="secondary"
-                  onClick={() => (window.location.href = "#individualCourse")}
+                <ScrollLink
+                  to="individualCourse"
+                  smooth={true}
+                  duration={1500}
+                  offset={-100}
                 >
-                  DOWIEDZ SIĘ WIECEJ
-                </Button>
+                  <Button variant="secondary">DOWIEDZ SIĘ WIECEJ</Button>
+                </ScrollLink>
               </div>
             </div>
 
@@ -67,12 +65,14 @@ function Programs() {
                 </p>
               </div>
               <div className={styles.programsSingleBtn}>
-                <Button
-                  variant="secondary"
-                  onClick={() => (window.location.href = "#groupCourse")}
+                <ScrollLink
+                  to="groupCourse"
+                  smooth={true}
+                  duration={1500}
+                  offset={-100}
                 >
-                  DOWIEDZ SIĘ WIECEJ
-                </Button>
+                  <Button variant="secondary">DOWIEDZ SIĘ WIECEJ</Button>
+                </ScrollLink>
               </div>
             </div>
 
@@ -88,12 +88,14 @@ function Programs() {
                 </p>
               </div>
               <div className={styles.programsSingleBtn}>
-                <Button
-                  variant="secondary"
-                  onClick={() => (window.location.href = "#businessCourse")}
+                <ScrollLink
+                  to="businessCourse"
+                  smooth={true}
+                  duration={1500}
+                  offset={-100}
                 >
-                  DOWIEDZ SIĘ WIECEJ
-                </Button>
+                  <Button variant="secondary">DOWIEDZ SIĘ WIECEJ</Button>
+                </ScrollLink>
               </div>
             </div>
 
@@ -106,12 +108,14 @@ function Programs() {
                 </p>
               </div>
               <div className={styles.programsSingleBtn}>
-                <Button
-                  variant="secondary"
-                  onClick={() => (window.location.href = "#companiesCourse")}
+                <ScrollLink
+                  to="businessCourse"
+                  smooth={true}
+                  duration={1500}
+                  offset={-100}
                 >
-                  DOWIEDZ SIĘ WIECEJ
-                </Button>
+                  <Button variant="secondary">DOWIEDZ SIĘ WIECEJ</Button>
+                </ScrollLink>
               </div>
             </div>
           </div>

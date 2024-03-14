@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
 import styles from "./BusinessCourse.module.scss";
 import kursyBiznesoweImage from "../../assets/kursyBiznesowe.png";
 import kursyBiznesoweAlt from "../../assets/kursyBiznesoweAlt.png";
@@ -79,12 +80,14 @@ function BusinessCourse() {
               </p>
             </div>
             <div className={styles.businessCourseBtn}>
-              <Button
-                variant="primary"
-                onClick={() => (window.location.href = "#business")}
+              <ScrollLink
+                to="business"
+                smooth={true}
+                duration={1500}
+                offset={-100}
               >
-                CZYTAJ WIĘCEJ
-              </Button>
+                <Button variant="primary">CZYTAJ WIĘCEJ</Button>
+              </ScrollLink>
             </div>
           </div>
         </div>

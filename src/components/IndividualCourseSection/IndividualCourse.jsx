@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
 import styles from "./IndividualCourse.module.scss";
 import kursyIndywidualneImage from "../../assets/kursyIndywidualne.png";
 import kursyIndywidualneAlt from "../../assets/kursyIndywidualneAlt.png";
@@ -124,12 +125,14 @@ function IndividualCourse() {
               </p>
             </div>
             <div className={styles.individualCourseBtn}>
-              <Button
-                variant="primary"
-                onClick={() => (window.location.href = "#individual")}
+              <ScrollLink
+                to="individual"
+                smooth={true}
+                duration={1500}
+                offset={-100}
               >
-                CZYTAJ WIĘCEJ
-              </Button>
+                <Button variant="primary">CZYTAJ WIĘCEJ</Button>
+              </ScrollLink>
             </div>
           </div>
         </div>
