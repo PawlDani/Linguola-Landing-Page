@@ -1,4 +1,3 @@
-// src/components/Hero/Hero.jsx
 import React from "react";
 import styles from "./Hero.module.scss";
 import Button from "../Buttons/Button";

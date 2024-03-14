@@ -78,7 +78,7 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 30px;
-      height: 100px;
+      height: 60px;
       width: auto;
     }
 
@@ -124,7 +124,7 @@
   .groupBenefits {
     flex-direction: column;
     .groupBenefitsSingle {
-      flex-basis: 100%; // Adjust for mobile responsiveness
+      flex-basis: 100%; 
     }
   }
 }

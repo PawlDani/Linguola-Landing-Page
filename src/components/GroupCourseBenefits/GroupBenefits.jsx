@@ -1,7 +1,6 @@
-// src/components/GroupBenefits/GroupBenefits.jsx
 import React from "react";
 import styles from "./GroupBenefits.module.scss";
-import checkmarkIcon from "../../assets/icons8-check.svg"; // Adjust the path as necessary
+import checkmarkIcon from "../../assets/checkmark.svg"; 
 
 const groupBenefitsData = [
   {

@@ -1,28 +1,38 @@
-// src/components/Contact/Contact.jsx
 import React from "react";
 import styles from "./Contact.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import Button from "../Buttons/Button"; // Import your Button component
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import Button from "../Buttons/Button";
 
 function Contact() {
   return (
     <section className={styles.contactSection} id="contact">
       <div className={`${styles.contactContainer} container`}>
         <div className={styles.formWrapper}>
-          <form className={styles.contactForm}>
+          {/* Update the form tag below */}
+          <form
+            className={styles.contactForm}
+            action="http://linguola.pl/sendmail.php"
+            method="POST"
+          >
             <div className={styles.inputGroup}>
-              <input type="text" placeholder="Imię" />
+              {/* Add name attribute */}
+              <input type="text" placeholder="Imię" name="name" />
             </div>
             <div className={styles.inputGroupSplit}>
-              <input type="email" placeholder="Email" />
-              <input type="tel" placeholder="Numer telefonu" />
+              {/* Add name attribute */}
+              <input type="email" placeholder="Email" name="email" />
+              <input type="tel" placeholder="Numer telefonu" name="phone" />
             </div>
             <div className={styles.inputGroup}>
-              <textarea placeholder="Wiadomość"></textarea>
+              {/* Add name attribute */}
+              <textarea placeholder="Wiadomość" name="message"></textarea>
             </div>
-            <Button variant="primary">Wyślij</Button>
+            {/* Ensure the button submits the form */}
+            <Button variant="primary" type="submit">
+              Wyślij
+            </Button>
           </form>
         </div>
         <div className={styles.infoWrapper}>

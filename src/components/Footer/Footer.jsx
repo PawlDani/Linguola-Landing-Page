@@ -9,7 +9,6 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={`${styles.footerContainer} container`}>
         <div className={styles.footerLinks}>
-          {/* Update these links to use ScrollLink for in-page navigation */}
           <ScrollLink
             to="hero"
             className={styles.footerLink}

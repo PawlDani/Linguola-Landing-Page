@@ -39,7 +39,6 @@ function Header() {
         >
           <ul className={styles.navUl}>
             <li className={styles.navigationItem}>
-              {/* Assuming "Start" refers to the top of the page or a specific section */}
               <ScrollLink
                 to="hero"
                 className={styles.navigationLink}
@@ -81,6 +80,7 @@ function Header() {
                 smooth={true}
                 duration={1500}
                 onClick={closeMenu}
+                offset={-100}
               >
                 Kontakt
               </ScrollLink>

@@ -1,18 +1,16 @@
-// src/components/Programs/Programs.jsx
 import React, { useState, useEffect } from "react";
 import styles from "./Programs.module.scss";
-import ofertaImage from "../../assets/programs.png"; // Ensure the correct path
-import ofertaImageSmall from "../../assets/programsAlt.png"; // Ensure the correct path
-import Button from "../Buttons/Button"; // Adjust the path to your Button component
+import ofertaImage from "../../assets/programs.png"; 
+import ofertaImageSmall from "../../assets/programsAlt.png"; 
+import Button from "../Buttons/Button"; 
 
 function Programs() {
-  // state to hold the current image src
   const [currentImage, setCurrentImage] = useState(ofertaImage);
 
-  // useEffect to handle window resize events
+
   useEffect(() => {
     const handleResize = () => {
-      // Check if window width is less than or equal to 950px
+     
       if (window.innerWidth <= 950) {
         setCurrentImage(ofertaImageSmall);
       } else {
@@ -20,16 +18,16 @@ function Programs() {
       }
     };
 
-    // Add event listener on mount
+    
     window.addEventListener("resize", handleResize);
 
-    // Call handleResize initially in case the user starts at < 950px
+
     handleResize();
 
-    // Remove event listener on cleanup
+   
     return () => window.removeEventListener("resize", handleResize);
-  }, []); // Empty dependency array means this effect runs only on mount and unmount
-
+  }, []); 
+  
   return (
     <section className={styles.programs} id="programs">
       <div className={`${styles.programsContent} container`}>

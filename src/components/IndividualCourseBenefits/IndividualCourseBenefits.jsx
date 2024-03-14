@@ -1,7 +1,6 @@
-// src/components/IndividualBenefits/IndividualBenefits.jsx
 import React from "react";
 import styles from "./IndividualBenefits.module.scss";
-import checkmarkIcon from "../../assets/icons8-check.svg"; // Adjust the path as necessary
+import checkmarkIcon from "../../assets/checkmark.svg"; 
 
 function IndividualBenefits() {
   return (

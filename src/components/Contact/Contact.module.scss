@@ -40,7 +40,7 @@
       gap: 10px;
 
       input {
-        width: 48%; // Spacing for 2 inputs in one row
+        width: 48%; 
       }
     }
 
@@ -58,7 +58,7 @@
 
       &:focus {
         border-color: $mainColor;
-        outline: none; // remove the default outline
+        outline: none; 
       }
 
       &::placeholder {
@@ -92,12 +92,12 @@
         display: flex;
         align-items: center;
         margin-bottom: 30px;
-        // hover scale effect
+      
         transition: transform 0.3s ease-in-out;
 
         a {
-          display: flex; // make the a tag a flex container
-          align-items: center; // center the items vertically
+          display: flex; 
+          align-items: center; 
           color: $textColor;
           text-decoration: none;
 
@@ -124,7 +124,4 @@
   }
 }
 
-// Media queries for responsiveness
-@media (max-width: 768px) {
-  // Adjust styles for mobile if needed
-}
+

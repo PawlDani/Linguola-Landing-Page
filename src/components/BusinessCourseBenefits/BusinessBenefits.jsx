@@ -1,7 +1,6 @@
-// src/components/BusinessBenefits/BusinessBenefits.jsx
 import React from "react";
 import styles from "./BusinessBenefits.module.scss";
-import checkmarkIcon from "../../assets/icons8-check.svg"; // Ensure the path is correct
+import checkmarkIcon from "../../assets/checkmark.svg"; 
 
 const businessBenefitsData = [
   {
@@ -27,7 +26,7 @@ function BusinessBenefits() {
       <div className={`${styles.businessContent} container`}>
         <div className={styles.businessHeader}>
           <h1 className={styles.businessHeaderText}>
-            Nasze zajęcia z języka biznesowego są wyjątkowe:
+            Nasze zajęcia z języka biznesowego są wyjątkowe
           </h1>
         </div>
         <div className={styles.businessBenefits}>
