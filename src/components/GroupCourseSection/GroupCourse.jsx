@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import styles from "./GroupCourse.module.scss";
-import groupCourseImage from "../../assets/groupcourse.png";
-import groupCourseAlt from "../../assets/groupcourseAlt.png";
+import groupCourseImage from "../../assets/groupcourse.webp";
+import groupCourseAlt from "../../assets/groupcourseAlt.webp";
 import unitedKingdomFlag from "../../assets/united-kingdom.png";
 import germanyFlag from "../../assets/germany.png";
 import italyFlag from "../../assets/italy.png";

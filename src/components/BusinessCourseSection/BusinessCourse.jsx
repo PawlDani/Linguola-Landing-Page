@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import styles from "./BusinessCourse.module.scss";
-import kursyBiznesoweImage from "../../assets/kursyBiznesowe.png";
-import kursyBiznesoweAlt from "../../assets/kursyBiznesoweAlt.png";
+import kursyBiznesoweImage from "../../assets/kursyBiznesowe.webp";
+import kursyBiznesoweAlt from "../../assets/kursyBiznesoweAlt.webp";
 import unitedKingdomFlag from "../../assets/united-kingdom.png";
 import germanyFlag from "../../assets/germany.png";
 import Button from "../Buttons/Button";

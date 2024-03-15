@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import styles from "./IndividualCourse.module.scss";
-import kursyIndywidualneImage from "../../assets/kursyIndywidualne.png";
-import kursyIndywidualneAlt from "../../assets/kursyIndywidualneAlt.png";
+import kursyIndywidualneImage from "../../assets/kursyIndywidualne.webp";
+import kursyIndywidualneAlt from "../../assets/kursyIndywidualneAlt.webp";
 import unitedKingdomFlag from "../../assets/united-kingdom.png";
 import germanyFlag from "../../assets/germany.png";
 import italyFlag from "../../assets/italy.png";

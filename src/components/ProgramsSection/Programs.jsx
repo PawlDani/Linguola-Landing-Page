@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Programs.module.scss";
-import ofertaImage from "../../assets/programs.png";
-import ofertaImageSmall from "../../assets/programsAlt.png";
+import ofertaImage from "../../assets/programs.webp";
+import ofertaImageSmall from "../../assets/programsAlt.webp";
 import { Link as ScrollLink } from "react-scroll";
 import Button from "../Buttons/Button";
 

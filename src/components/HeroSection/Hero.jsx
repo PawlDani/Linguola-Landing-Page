@@ -4,6 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 import Button from "../Buttons/Button";
 
 function Hero() {
+  //
   return (
     <section id="hero" className={styles.heroWrapper}>
       <article className={styles.hero}>
