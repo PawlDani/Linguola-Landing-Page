@@ -18,16 +18,16 @@
   background-color: $mainColor;
   transition: transform 0.3s ease, background-color 0.3s ease;
 
-  @media (max-width: 1200px) {
-    font-size: math.div(
-      2.5rem,
-      1.4
-    ); 
-  }
+  // @media (max-width: 1200px) {
+  //   font-size: math.div(
+  //     2.5rem,
+  //     1.4
+  //   );
+  // }
 
   &:hover {
     cursor: pointer;
-    background-color: darken($mainColor, 10%); 
+    background-color: darken($mainColor, 10%);
     transform: scale(1.05);
   }
 }
@@ -43,12 +43,12 @@
   transition: transform 0.3s ease, background-color 0.3s ease;
 
   @media (max-width: 1200px) {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
   &:hover {
     cursor: pointer;
-    background-color: darken($backgroundColor, 10%); 
+    background-color: darken($backgroundColor, 10%);
     transform: scale(1.05);
   }
 }
