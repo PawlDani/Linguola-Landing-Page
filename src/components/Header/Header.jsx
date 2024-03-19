@@ -24,7 +24,7 @@ function Header() {
             to="hero"
             className={styles.headerLogoLink}
             smooth={true}
-            duration={1500}
+            duration={500}
           >
             <img src={logo} alt="Logo" className={styles.headerLogo} />
           </ScrollLink>
@@ -43,7 +43,7 @@ function Header() {
                 to="hero"
                 className={styles.navigationLink}
                 smooth={true}
-                duration={1500}
+                duration={500}
                 onClick={closeMenu}
               >
                 Start
@@ -54,7 +54,7 @@ function Header() {
                 to="benefits"
                 className={styles.navigationLink}
                 smooth={true}
-                duration={1500}
+                duration={500}
                 onClick={closeMenu}
                 offset={-100}
               >
@@ -66,7 +66,7 @@ function Header() {
                 to="programs"
                 className={styles.navigationLink}
                 smooth={true}
-                duration={1500}
+                duration={500}
                 onClick={closeMenu}
                 offset={-100}
               >
@@ -78,7 +78,7 @@ function Header() {
                 to="contact"
                 className={styles.navigationLink}
                 smooth={true}
-                duration={1500}
+                duration={500}
                 onClick={closeMenu}
                 offset={-100}
               >
