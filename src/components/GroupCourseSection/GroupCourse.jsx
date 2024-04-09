@@ -83,7 +83,7 @@ function GroupCourse() {
                   <p>65 zł / os.</p>
                   <br></br>
                   <br></br>
-                  <p>70 zł / os.</p>
+                  <p>70 zł / os.</p> 
                 </>
               ) : (
                 <>
