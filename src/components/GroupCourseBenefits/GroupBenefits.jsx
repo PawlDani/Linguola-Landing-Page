@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./GroupBenefits.module.scss";
-import checkmarkIcon from "../../assets/checkmark.svg"; 
+import checkmarkIcon from "../../assets/checkmark.svg";
 
 const groupBenefitsData = [
   {
@@ -11,7 +11,7 @@ const groupBenefitsData = [
   {
     header: "Grupa motywujących się uczniów",
     description:
-      "Nasze kursy to nie tylko słuchanie wykładów, ale przede wszystkim aktywne uczestnictwo. Ćwiczenia grupowe, gry językowe i role-play sprawią, że nauka stanie się fascynującą interakcją.",
+      "Nasze kursy to nie tylko słuchanie wykładów, ale przede wszystkim aktywne uczestnictwo. Ćwiczenia grupowe, gry językowe i role-play sprawią, że nauka stanie się ciekawą interakcją.",
   },
   {
     header: "Materiały do pracy własnej",

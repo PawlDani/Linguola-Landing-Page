@@ -41,7 +41,7 @@ function Programs() {
                   KURSY INDYWIDUALNE
                 </h3>
                 <p className={styles.programsSingleText}>
-                  Zajęcia indywidualne dostosowane do Twoich potrzeb
+                  Zajęcia 1:1 z lektorem
                 </p>
               </div>
               <div className={styles.programsSingleBtn}>
@@ -61,7 +61,7 @@ function Programs() {
               <div className={styles.programsSingleDescription}>
                 <h3 className={styles.programsSingleHeader}>KURSY GRUPOWE</h3>
                 <p className={styles.programsSingleText}>
-                  Interaktywne kursy w małych grupach
+                  Interaktywne zajęcia w małych grupach
                 </p>
               </div>
               <div className={styles.programsSingleBtn}>
@@ -83,8 +83,7 @@ function Programs() {
                   JĘZYKI SPECJALISTYCZNE
                 </h3>
                 <p className={styles.programsSingleText}>
-                  Zajęcia indywidualne oraz kursy grupowe języka z różnych
-                  dziedzin biznesu
+                  Zajęcia indywidualne oraz grupowe języka biznesowego
                 </p>
               </div>
               <div className={styles.programsSingleBtn}>
@@ -104,7 +103,7 @@ function Programs() {
               <div className={styles.programsSingleDescription}>
                 <h3 className={styles.programsSingleHeader}>KURSY DLA FIRM</h3>
                 <p className={styles.programsSingleText}>
-                  Kursy grupowe dla pracowników
+                  Zajęcia grupowe dla pracowników
                 </p>
               </div>
               <div className={styles.programsSingleBtn}>

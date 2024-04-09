@@ -118,16 +118,6 @@ function Contact() {
           </p>
           <div className={styles.contactInfo}>
             <div className={styles.infoItem}>
-              <a
-                href="https://wa.me/48530211105"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faWhatsapp} className={styles.icon} />
-                <span>+48 530 211 105</span>
-              </a>
-            </div>
-            <div className={styles.infoItem}>
               <a href="mailto:info@linguola.pl">
                 <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
                 <span>info@linguola.pl</span>

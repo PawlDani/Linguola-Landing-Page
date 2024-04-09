@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./BusinessBenefits.module.scss";
-import checkmarkIcon from "../../assets/checkmark.svg"; 
+import checkmarkIcon from "../../assets/checkmark.svg";
 
 const businessBenefitsData = [
   {
     header: "Prawdziwe przypadki z branży",
     description:
-      "Autentyczne przypadki biznesowe na zajęciach umożliwiają praktyczne zastosowanie języka w kontekście zawodowym. To doskonała okazja do rozwinięcia umiejętności komunikacyjnych w realnych sytuacjach biznesowych.",
+      "Autentyczne przypadki biznesowe na zajęciach umożliwiają praktyczne zastosowanie języka w kontekście zawodowym. To idealna okazja do rozwinięcia umiejętności komunikacyjnych w prawdziwych sytuacjach biznesowych.",
   },
   {
     header: "Obszerna gama tematów",
@@ -16,7 +16,7 @@ const businessBenefitsData = [
   {
     header: "Nacisk na słownictwo branżowe",
     description:
-      "Nauka specjalistycznej terminologii pomoże Ci w poszukiwaniu pracy w wymarzonej branży. Zajęcia pomagają zyskać pewność w komunikacji w zakresie własnej specjalizacji.",
+      "Nauka specjalistycznej terminologii pomoże Ci w poszukiwaniu pracy w wymarzonej branży lub w rozwoju dotychczasowej kariery. Zajęcia pomagają zyskać pewność w komunikacji w zakresie własnej specjalizacji.",
   },
 ];
 

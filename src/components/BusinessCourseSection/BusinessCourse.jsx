@@ -53,8 +53,8 @@ function BusinessCourse() {
             </div>
             <div className={styles.businessCoursePricing}>
               <h3 className={styles.businessCoursePricingHeader}>CENA</h3>
-              <p>120.00 zł</p>
-              <p>70.00 zł</p>
+              <p>130 zł / h</p>
+              <p>80 zł / h</p>
             </div>
           </div>
           <div className={styles.businessCourseLanguages}>

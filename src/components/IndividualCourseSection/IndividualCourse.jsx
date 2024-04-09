@@ -41,10 +41,10 @@ function IndividualCourse() {
               KURSY INDYWIDUALNE
             </h3>
             <p className={styles.individualCourseHeaderDescription}>
-              Kursy indywidualne, stworzone z myślą o Twoich unikalnych
-              potrzebach językowych! Jeśli zależy Ci na płynnym wyrażaniu się,
-              perfekcji gramatycznej, lub przygotowaniu do egzaminów i
-              certyfikatów, spersonalizowane zajęcia są idealnym rozwiązaniem.
+              Kursy indywidualne, stworzone z myślą o Twoich potrzebach
+              językowych! Jeśli zależy Ci na płynnym wyrażaniu się, perfekcji
+              gramatycznej lub przygotowaniu do egzaminów i certyfikatów,
+              zajęcia indywidualne są idealnym rozwiązaniem.
             </p>
           </div>
           <div className={styles.individualCoursePackages}>
@@ -54,22 +54,25 @@ function IndividualCourse() {
               {windowWidth <= 435 ? (
                 <>
                   <p>
-                    Jednorazowe zajęcia <br></br> [60 min]
+                    Lekcja próbna <br></br> [60 min]
+                  </p>
+                  <br></br>
+                  <p>Zajęcia jednorazowe</p>
+                  <br></br>
+                  <p>
+                    Kurs miesięczny <br></br> [4 spotkania]
                   </p>
                   <br></br>
                   <p>
-                    Kurs miesięczny <br></br> [4 spotkania po 60 min]
-                  </p>
-                  <br></br>
-                  <p>
-                    Kurs kwartalny<br></br> [12 spotkań po 60 min]
+                    Kurs kwartalny<br></br> [12 spotkań]
                   </p>
                 </>
               ) : (
                 <>
-                  <p>Jednorazowe zajęcia [60 min]</p>
-                  <p>Kurs miesięczny [4 spotkania po 60 min]</p>
-                  <p>Kurs kwartalny [12 spotkań po 60 min]</p>
+                  <p>Lekcja próbna </p>
+                  <p>Zajęcia jednorazowe </p>
+                  <p>Kurs miesięczny [4 spotkania]</p>
+                  <p>Kurs kwartalny [12 spotkań]</p>
                 </>
               )}
             </div>
@@ -77,19 +80,23 @@ function IndividualCourse() {
               <h3 className={styles.individualCoursePricingHeader}>CENA</h3>
               {windowWidth <= 435 ? (
                 <>
-                  <p>100 zł </p>
+                  <p>80 zł / h</p>
                   <br></br>
                   <br></br>
-                  <p>390 zł</p>
+                  <p>130 zł / h </p>
                   <br></br>
                   <br></br>
-                  <p>1100 zł</p>
+                  <p>120 zł / h</p>
+                  <br></br>
+                  <br></br>
+                  <p>100 zł / h</p>
                 </>
               ) : (
                 <>
-                  <p>100 zł</p>
-                  <p>390 zł</p>
-                  <p>1100 zł</p>
+                  <p>80 zł / h</p>
+                  <p>130 zł / h</p>
+                  <p>120 zł / h</p>
+                  <p>110 zł / h</p>
                 </>
               )}
             </div>

@@ -77,19 +77,19 @@ function GroupCourse() {
 
               {windowWidth <= 435 ? (
                 <>
-                  <p>55.00 zł</p>
+                  <p>55 zł / os.</p>
                   <br></br>
                   <br></br>
-                  <p>65.00 zł</p>
+                  <p>65 zł / os.</p>
                   <br></br>
                   <br></br>
-                  <p>70.00 zł</p>
+                  <p>70 zł / os.</p>
                 </>
               ) : (
                 <>
-                  <p>55.00 zł/os.</p>
-                  <p>65.00 zł/os.</p>
-                  <p>70.00 zł/os.</p>
+                  <p>55 zł / os.</p>
+                  <p>65 zł / os.</p>
+                  <p>70 zł / os.</p>
                 </>
               )}
             </div>

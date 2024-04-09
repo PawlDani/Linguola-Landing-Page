@@ -3,7 +3,7 @@
 .benefits {
   display: flex;
   flex-direction: column;
-  margin-bottom: 140px;
+  margin-bottom: 80px;
 
   @media (max-width: 950px) {
     margin-bottom: 80px;
@@ -27,11 +27,10 @@
         color: $textColor;
         font-size: $h2FontSize;
         font-family: $mainFontFamily;
-        
 
         .underline {
           padding-bottom: 10px;
-          border-bottom: 3px solid currentColor; 
+          border-bottom: 3px solid currentColor;
         }
       }
     }
@@ -47,12 +46,12 @@
         animation: fadeInUp 0.8s ease-out forwards;
         opacity: 0;
         will-change: opacity, transform;
-        max-width: 300px; 
+        max-width: 300px;
         display: flex;
         flex-direction: column;
         gap: 25px;
         padding: 25px;
-      
+
         transition: transform 0.3s ease;
         color: $textColor;
 
@@ -95,7 +94,7 @@
       @keyframes fadeInUp {
         from {
           opacity: 0;
-          transform: translateY(20px); 
+          transform: translateY(20px);
         }
         to {
           opacity: 1;
