@@ -85,6 +85,11 @@ function Header() {
                 Kontakt
               </ScrollLink>
             </li>
+            <li className={styles.navigationItem}>
+              <a href="/app" className={styles.navigationLink}>
+                Aplikacja
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
