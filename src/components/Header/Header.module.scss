@@ -38,10 +38,12 @@
     padding: 0 20px;
 
     &:last-child {
-      padding-right: 0;
-
       animation: wobble-ver-left 2s infinite;
       animation-iteration-count: 3;
+
+      @media (min-width: 769px) {
+        padding-right: 0;
+      }
     }
 
     .navigationLink {
