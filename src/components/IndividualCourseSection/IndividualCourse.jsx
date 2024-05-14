@@ -7,8 +7,10 @@ import unitedKingdomFlag from "../../assets/united-kingdom.png";
 import germanyFlag from "../../assets/germany.png";
 import italyFlag from "../../assets/italy.png";
 import Button from "../Buttons/Button";
+import { useTranslation } from "react-i18next";
 
 function IndividualCourse() {
+  const { t } = useTranslation();
   const [currentImage, setCurrentImage] = useState(kursyIndywidualneImage);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -33,102 +35,111 @@ function IndividualCourse() {
     <section className={styles.individualCourse} id="individualCourse">
       <div className={`${styles.individualCourseContent} container`}>
         <div className={styles.individualCourseImage}>
-          <img src={currentImage} alt="Individual Courses" />
+          <img src={currentImage} alt={t("individualCourse.imageAlt")} />
         </div>
         <div className={styles.individualCourseTypes}>
           <div className={styles.individualCourseHeader}>
             <h3 className={styles.individualCourseHeaderText}>
-              KURSY INDYWIDUALNE
+              {t("individualCourse.title")}
             </h3>
             <p className={styles.individualCourseHeaderDescription}>
-              Kursy indywidualne, stworzone z myślą o Twoich potrzebach
-              językowych! Jeśli zależy Ci na płynnym wyrażaniu się, perfekcji
-              gramatycznej lub przygotowaniu do egzaminów i certyfikatów,
-              zajęcia indywidualne są idealnym rozwiązaniem.
+              {t("individualCourse.description")}
             </p>
           </div>
           <div className={styles.individualCoursePackages}>
             <div className={styles.individualCoursePackage}>
-              <h3 className={styles.individualCoursePackageHeader}>PAKIET</h3>
+              <h3 className={styles.individualCoursePackageHeader}>
+                {t("individualCourse.package")}
+              </h3>
 
               {windowWidth <= 435 ? (
                 <>
                   <p>
-                    Lekcja próbna <br></br> [60 min]
+                    {t("individualCourse.trialLesson")} <br /> [60 min]
                   </p>
-                  <br></br>
-                  <p>Zajęcia jednorazowe</p>
-                  <br></br>
+                  <br />
+                  <p>{t("individualCourse.oneTimeClasses")}</p>
+                  <br />
                   <p>
-                    Kurs miesięczny <br></br> [4 spotkania]
+                    {t("individualCourse.monthlyCourse")} <br /> [4{" "}
+                    {t("individualCourse.classes")}]
                   </p>
-                  <br></br>
+                  <br />
                   <p>
-                    Kurs kwartalny<br></br> [12 spotkań]
+                    {t("individualCourse.quarterlyCourse")} <br /> [12{" "}
+                    {t("individualCourse.classes")}]
                   </p>
                 </>
               ) : (
                 <>
-                  <p>Lekcja próbna </p>
-                  <p>Zajęcia jednorazowe </p>
-                  <p>Kurs miesięczny [4 spotkania]</p>
-                  <p>Kurs kwartalny [12 spotkań]</p>
+                  <p>{t("individualCourse.trialLesson")}</p>
+                  <p>{t("individualCourse.oneTimeClasses")}</p>
+                  <p>
+                    {t("individualCourse.monthlyCourse")} [4{" "}
+                    {t("individualCourse.classes")}]
+                  </p>
+                  <p>
+                    {t("individualCourse.quarterlyCourse")} [12{" "}
+                    {t("individualCourse.classes")}]
+                  </p>
                 </>
               )}
             </div>
             <div className={styles.individualCoursePricing}>
-              <h3 className={styles.individualCoursePricingHeader}>CENA</h3>
+              <h3 className={styles.individualCoursePricingHeader}>
+                {t("individualCourse.price")}
+              </h3>
               {windowWidth <= 435 ? (
                 <>
-                  <p>80 zł / h</p>
-                  <br></br>
-                  <br></br>
-                  <p>130 zł / h </p>
-                  <br></br>
-                  <br></br>
-                  <p>120 zł / h</p>
-                  <br></br>
-                  <br></br>
-                  <p>100 zł / h</p>
+                  <p>{t("individualCourse.priceTrial")}</p>
+                  <br />
+                  <br />
+                  <p>{t("individualCourse.priceOneTime")}</p>
+                  <br />
+                  <br />
+                  <p>{t("individualCourse.priceMonthly")}</p>
+                  <br />
+                  <br />
+                  <p>{t("individualCourse.priceQuarterly")}</p>
                 </>
               ) : (
                 <>
-                  <p>80 zł / h</p>
-                  <p>130 zł / h</p>
-                  <p>120 zł / h</p>
-                  <p>110 zł / h</p>
+                  <p>{t("individualCourse.priceTrial")}</p>
+                  <p>{t("individualCourse.priceOneTime")}</p>
+                  <p>{t("individualCourse.priceMonthly")}</p>
+                  <p>{t("individualCourse.priceQuarterly")}</p>
                 </>
               )}
             </div>
           </div>
           <div className={styles.individualCourseLanguages}>
             <h3 className={styles.individualCourseLanguagesHeader}>
-              DOSTĘPNE JĘZYKI
+              {t("individualCourse.availableLanguages")}
             </h3>
             <div className={styles.languages}>
               <p>
                 <img
                   src={unitedKingdomFlag}
-                  alt="English flag"
+                  alt={t("individualCourse.englishFlag")}
                   className={styles.flag}
                 />{" "}
-                Angielski
+                {t("individualCourse.english")}
               </p>
               <p>
                 <img
                   src={germanyFlag}
-                  alt="German flag"
+                  alt={t("individualCourse.germanFlag")}
                   className={styles.flag}
                 />{" "}
-                Niemiecki
+                {t("individualCourse.german")}
               </p>
               <p>
                 <img
                   src={italyFlag}
-                  alt="Italian flag"
+                  alt={t("individualCourse.italianFlag")}
                   className={styles.flag}
                 />{" "}
-                Włoski
+                {t("individualCourse.italian")}
               </p>
             </div>
             <div className={styles.individualCourseBtn}>
@@ -138,7 +149,9 @@ function IndividualCourse() {
                 duration={1500}
                 offset={-100}
               >
-                <Button variant="primary">CZYTAJ WIĘCEJ</Button>
+                <Button variant="primary">
+                  {t("individualCourse.readMore")}
+                </Button>
               </ScrollLink>
             </div>
           </div>

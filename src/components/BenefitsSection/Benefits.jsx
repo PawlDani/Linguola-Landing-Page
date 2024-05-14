@@ -7,8 +7,11 @@ import {
   faBriefcase,
 } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Benefits.module.scss";
+import { useTranslation } from "react-i18next";
 
 function Benefits() {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.benefits}>
       <article
@@ -17,45 +20,46 @@ function Benefits() {
       >
         <div className={styles.benefitsHeader}>
           <h2 className={styles.benefitsTitle}>
-            <span className={styles.underline}>Dlaczego</span> Linguola?
+            <span className={styles.underline}>{t("benefits.why")}</span>{" "}
+            Linguola?
           </h2>
         </div>
         <div className={styles.benefitsBoxes}>
           <div className={styles.box}>
             <FontAwesomeIcon icon={faRocket} className={styles.icon} />
-            <h3 className={styles.boxHeader}>
-              Szybka nauka, natychmiastowe efekty
-            </h3>
+            <h3 className={styles.boxHeader}>{t("benefits.fastLearning")}</h3>
             <p className={styles.boxDescription}>
-              Program online skupia się na praktycznej wiedzy
+              {t("benefits.practicalKnowledge")}
             </p>
           </div>
 
           <div className={styles.box}>
             <FontAwesomeIcon icon={faUserGraduate} className={styles.icon} />
-            <h3 className={styles.boxHeader}>Zajęcia dostosowane do Ciebie</h3>
+            <h3 className={styles.boxHeader}>
+              {t("benefits.personalizedClasses")}
+            </h3>
             <p className={styles.boxDescription}>
-              Zajęcia indywidualne, dostosowane do potrzeb i tempa nauki
+              {t("benefits.adaptedToNeeds")}
             </p>
           </div>
 
           <div className={styles.box}>
             <FontAwesomeIcon icon={faLightbulb} className={styles.icon} />
             <h3 className={styles.boxHeader}>
-              Skuteczne metody i wsparcie nauczyciela
+              {t("benefits.effectiveMethods")}
             </h3>
             <p className={styles.boxDescription}>
-              Doświadczony lektor z pasją to gwarancja przyjemności z nauki
+              {t("benefits.experiencedTeacher")}
             </p>
           </div>
 
           <div className={styles.box}>
             <FontAwesomeIcon icon={faBriefcase} className={styles.icon} />
             <h3 className={styles.boxHeader}>
-              Język specjalistyczny <br></br>w pracy
+              {t("benefits.specializedLanguage")}
             </h3>
             <p className={styles.boxDescription}>
-              Kursy języka biznesowego wspierające rozwój zawodowy
+              {t("benefits.businessCourses")}
             </p>
           </div>
         </div>

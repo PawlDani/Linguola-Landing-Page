@@ -1,0 +1,58 @@
+{
+  "start": "Start",
+  "about_us": "O nas",
+  "offer": "Oferta",
+  "contact": "Kontakt",
+  "application": "Aplikacja",
+  "hero": {
+    "challenge": "Twoje językowe wyzwanie",
+    "startsHere": "Zaczyna się tutaj!",
+    "offer": "Oferta"
+  },
+  "benefits": {
+    "why": "Dlaczego",
+    "fastLearning": "Szybka nauka, natychmiastowe efekty",
+    "practicalKnowledge": "Program online skupia się na praktycznej wiedzy",
+    "personalizedClasses": "Zajęcia dostosowane do Ciebie",
+    "adaptedToNeeds": "Zajęcia indywidualne, dostosowane do potrzeb i tempa nauki",
+    "effectiveMethods": "Skuteczne metody i wsparcie nauczyciela",
+    "experiencedTeacher": "Doświadczony lektor z pasją to gwarancja przyjemności z nauki",
+    "specializedLanguage": "Język specjalistyczny w pracy",
+    "businessCourses": "Kursy języka biznesowego wspierające rozwój zawodowy"
+  },
+  "programs": {
+    "offer": "Oferta",
+    "individualCourses": "Kursy indywidualne",
+    "oneOnOne": "Zajęcia 1:1 z lektorem",
+    "groupCourses": "Kursy grupowe",
+    "interactiveClasses": "Interaktywne zajęcia w małych grupach",
+    "specializedLanguages": "Języki specjalistyczne",
+    "businessLanguage": "Zajęcia indywidualne oraz grupowe języka biznesowego",
+    "coursesForCompanies": "Kursy dla firm",
+    "groupClasses": "Zajęcia grupowe dla pracowników",
+    "learnMore": "Dowiedz się więcej"
+  },"individualCourse": {
+    "imageAlt": "Kursy indywidualne",
+    "title": "Kursy indywidualne",
+    "description": "Kursy indywidualne, stworzone z myślą o twoich potrzebach językowych! Jeśli zależy ci na płynnym wyrażaniu się, perfekcji gramatycznej lub przygotowaniu do egzaminów i certyfikatów, zajęcia indywidualne są idealnym rozwiązaniem.",
+    "package": "Pakiet",
+    "trialLesson": "Lekcja próbna",
+    "oneTimeClasses": "Zajęcia jednorazowe",
+    "monthlyCourse": "Kurs miesięczny",
+    "quarterlyCourse": "Kurs kwartalny",
+    "classes": "spotkania",
+    "price": "Cena",
+    "availableLanguages": "Dostępne języki",
+    "englishFlag": "Flaga angielska",
+    "germanFlag": "Flaga niemiecka",
+    "italianFlag": "Flaga włoska",
+    "english": "Angielski",
+    "german": "Niemiecki",
+    "italian": "Włoski",
+    "readMore": "Czytaj więcej",
+    "priceTrial": "80 zł / h",
+    "priceOneTime": "130 zł / h",
+    "priceMonthly": "120 zł / h",
+    "priceQuarterly": "110 zł / h"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "start": "Start",
+  "about_us": "Über uns",
+  "offer": "Kurse",
+  "contact": "Kontakt",
+  "application": "App",
+  "hero": {
+    "challenge": "Dein Sprachabenteuer ",
+    "startsHere": "Beginnt hier!",
+    "offer": "Kurse"
+  },
+  "benefits": {
+    "why": "Warum",
+    "fastLearning": "Schnelles und effektives Lernen",
+    "practicalKnowledge": "Das Online-Programm konzentriert sich auf praktisches Wissen",
+    "personalizedClasses": "Individuell angepasste Kurse",
+    "adaptedToNeeds": "Auf Ihre Bedürfnisse und Lerntempo angepasste Kurse",
+    "effectiveMethods": "Effektive Methoden und Unterstützung",
+    "experiencedTeacher": "Erfahrene Lehrer garantieren Freude am Lernen",
+    "specializedLanguage": "Fachsprache am Arbeitsplatz",
+    "businessCourses": "Business-Sprachkurse für Ihre berufliche Weiterentwicklung"
+  },
+  "programs": {
+    "offer": "Angebot",
+    "individualCourses": "Einzelkurse",
+    "oneOnOne": "1:1 Unterricht mit einem Lehrer",
+    "groupCourses": "Gruppenkurse",
+    "interactiveClasses": "Interaktive Kurse in kleinen Gruppen",
+    "specializedLanguages": "Fachsprachen",
+    "businessLanguage": "Einzel- und Gruppenunterricht in Business-Sprache",
+    "coursesForCompanies": "Kurse für Unternehmen",
+    "groupClasses": "Gruppenunterricht für Firmenmitarbeiter",
+    "learnMore": "Mehr erfahren"
+  },
+  "individualCourse": {
+    "imageAlt": "Einzelkurse",
+    "title": "Einzelkurse",
+    "description": "Unsere Einzelkurse sind auf Ihre Sprachbedürfnisse zugeschnitten! Wenn Sie schnell und effektiv lernen möchten, sind Sie bei uns genau richtig. Ob Sie Anfänger oder Fortgeschrittener sind, Grammatik oder Konversation üben möchten, oder sich auf Prüfungen und Zertifikate vorbereiten möchten, Einzelkurse sind die beste Wahl.",
+    "package": "Paket",
+    "trialLesson": "Probestunde",
+    "oneTimeClasses": "Einzelstunde",
+    "monthlyCourse": "Monatskurs",
+    "quarterlyCourse": "Quartalskurs",
+    "classes": "Kurse",
+    "price": "Preis",
+    "availableLanguages": "Verfügbare Sprachen",
+    "englishFlag": "Englische flagge",
+    "germanFlag": "Deutsche flagge",
+    "italianFlag": "Italienische flagge",
+    "english": "Englisch",
+    "german": "Deutsch",
+    "italian": "Italienisch",
+    "readMore": "Mehr erfahren",
+    "priceTrial": "€20 / h",
+    "priceOneTime": "€30 / h",
+    "priceMonthly": "€28 / h",
+    "priceQuarterly": "€25 / h"
+  }
+}

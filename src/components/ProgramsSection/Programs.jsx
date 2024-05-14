@@ -4,8 +4,10 @@ import ofertaImage from "../../assets/programs.webp";
 import ofertaImageSmall from "../../assets/programsAlt.webp";
 import { Link as ScrollLink } from "react-scroll";
 import Button from "../Buttons/Button";
+import { useTranslation } from "react-i18next";
 
 function Programs() {
+  const { t } = useTranslation();
   const [currentImage, setCurrentImage] = useState(ofertaImage);
 
   useEffect(() => {
@@ -28,7 +30,7 @@ function Programs() {
     <section className={styles.programs} id="programs">
       <div className={`${styles.programsContent} container`}>
         <div className={styles.programsHeader}>
-          <h2 className={styles.programsHeaderText}>OFERTA</h2>
+          <h2 className={styles.programsHeaderText}>{t("programs.offer")}</h2>
         </div>
         <div className={styles.programsIndividualWrapper}>
           <div className={styles.programsImage}>
@@ -38,10 +40,10 @@ function Programs() {
             <div className={styles.programsSingle}>
               <div className={styles.programsSingleDescription}>
                 <h3 className={styles.programsSingleHeader}>
-                  KURSY INDYWIDUALNE
+                  {t("programs.individualCourses")}
                 </h3>
                 <p className={styles.programsSingleText}>
-                  Zajęcia 1:1 z lektorem
+                  {t("programs.oneOnOne")}
                 </p>
               </div>
               <div className={styles.programsSingleBtn}>
@@ -51,7 +53,7 @@ function Programs() {
                   duration={1500}
                   offset={-100}
                 >
-                  <Button variant="secondary">DOWIEDZ SIĘ WIECEJ</Button>
+                  <Button variant="secondary">{t("programs.learnMore")}</Button>
                 </ScrollLink>
               </div>
             </div>
@@ -59,9 +61,11 @@ function Programs() {
             {/* Group Courses */}
             <div className={styles.programsSingle}>
               <div className={styles.programsSingleDescription}>
-                <h3 className={styles.programsSingleHeader}>KURSY GRUPOWE</h3>
+                <h3 className={styles.programsSingleHeader}>
+                  {t("programs.groupCourses")}
+                </h3>
                 <p className={styles.programsSingleText}>
-                  Interaktywne zajęcia w małych grupach
+                  {t("programs.interactiveClasses")}
                 </p>
               </div>
               <div className={styles.programsSingleBtn}>
@@ -71,7 +75,7 @@ function Programs() {
                   duration={1500}
                   offset={-100}
                 >
-                  <Button variant="secondary">DOWIEDZ SIĘ WIECEJ</Button>
+                  <Button variant="secondary">{t("programs.learnMore")}</Button>
                 </ScrollLink>
               </div>
             </div>
@@ -80,10 +84,10 @@ function Programs() {
             <div className={styles.programsSingle}>
               <div className={styles.programsSingleDescription}>
                 <h3 className={styles.programsSingleHeader}>
-                  JĘZYKI SPECJALISTYCZNE
+                  {t("programs.specializedLanguages")}
                 </h3>
                 <p className={styles.programsSingleText}>
-                  Zajęcia indywidualne oraz grupowe języka biznesowego
+                  {t("programs.businessLanguage")}
                 </p>
               </div>
               <div className={styles.programsSingleBtn}>
@@ -93,7 +97,7 @@ function Programs() {
                   duration={1500}
                   offset={-100}
                 >
-                  <Button variant="secondary">DOWIEDZ SIĘ WIECEJ</Button>
+                  <Button variant="secondary">{t("programs.learnMore")}</Button>
                 </ScrollLink>
               </div>
             </div>
@@ -101,9 +105,11 @@ function Programs() {
             {/* Courses for Companies */}
             <div className={styles.programsSingle}>
               <div className={styles.programsSingleDescription}>
-                <h3 className={styles.programsSingleHeader}>KURSY DLA FIRM</h3>
+                <h3 className={styles.programsSingleHeader}>
+                  {t("programs.coursesForCompanies")}
+                </h3>
                 <p className={styles.programsSingleText}>
-                  Zajęcia grupowe dla pracowników
+                  {t("programs.groupClasses")}
                 </p>
               </div>
               <div className={styles.programsSingleBtn}>
@@ -113,7 +119,7 @@ function Programs() {
                   duration={1500}
                   offset={-100}
                 >
-                  <Button variant="secondary">DOWIEDZ SIĘ WIECEJ</Button>
+                  <Button variant="secondary">{t("programs.learnMore")}</Button>
                 </ScrollLink>
               </div>
             </div>

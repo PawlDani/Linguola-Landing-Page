@@ -1,0 +1,59 @@
+{
+  "start": "Start",
+  "about_us": "About Us",
+  "offer": "Courses",
+  "contact": "Contact",
+  "application": "Web App",
+  "hero": {
+    "challenge": "Your language journey",
+    "startsHere": "Starts here!",
+    "offer": "Courses"
+  },
+  "benefits": {
+    "why": "Why",
+    "fastLearning": "Fast learning, immediate results",
+    "practicalKnowledge": "The online program focuses on practical knowledge",
+    "personalizedClasses": "Classes adjusted to your needs",
+    "adaptedToNeeds": "Individual lessons tailored to your needs and learning pace",
+    "effectiveMethods": "Effective methods and tutor support",
+    "experiencedTeacher": "Experienced teachers guarantee an enjoyable learning experience", 
+    "specializedLanguage": "Specialized language courses",
+    "businessCourses": "Business language courses supporting career development"
+  },
+  "programs": {
+    "offer": "Courses",
+    "individualCourses": "Individual courses",
+    "oneOnOne": "1:1 lessons with a teacher",
+    "groupCourses": "Group courses",
+    "interactiveClasses": "Interactive classes in small groups",
+    "specializedLanguages": "Specialized language courses",
+    "businessLanguage": "Individual and group business language classes",
+    "coursesForCompanies": "Courses for companies",
+    "groupClasses": "Group classes for company employees",
+    "learnMore": "Learn more"
+  },
+  "individualCourse": {
+    "imageAlt": "Individual courses",
+    "title": "Individual courses",
+    "description": "Individual courses are designed with your language needs in mind! If you want to express yourself fluently, achieve grammatical perfection, or prepare for exams and certificates, individual lessons are the ideal solution.",
+    "package": "Package",
+    "trialLesson": "Trial lesson",
+    "oneTimeClasses": "Individual classes",
+    "monthlyCourse": "Monthly course",
+    "quarterlyCourse": "Quarterly course",
+    "classes": "classes",
+    "price": "Price",
+    "availableLanguages": "Available languages",
+    "englishFlag": "English flag",
+    "germanFlag": "German flag",
+    "italianFlag": "Italian flag",
+    "english": "English",
+    "german": "German",
+    "italian": "Italian",
+    "readMore": "Read more",
+    "priceTrial": "€20 / h",
+    "priceOneTime": "€30 / h",
+    "priceMonthly": "€28 / h",
+    "priceQuarterly": "€25 / h"
+  }
+}

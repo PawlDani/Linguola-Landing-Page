@@ -4,9 +4,14 @@ import styles from "./Header.module.scss";
 import logo from "../../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
+import germanyFlag from "../../assets/germany.png";
+import polandFlag from "../../assets/poland.png";
+import ukFlag from "../../assets/united-kingdom.png";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,6 +19,10 @@ function Header() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
   };
 
   return (
@@ -46,7 +55,7 @@ function Header() {
                 duration={500}
                 onClick={closeMenu}
               >
-                Start
+                {t("start")}
               </ScrollLink>
             </li>
             <li className={styles.navigationItem}>
@@ -58,7 +67,7 @@ function Header() {
                 onClick={closeMenu}
                 offset={-100}
               >
-                O nas
+                {t("about_us")}
               </ScrollLink>
             </li>
             <li className={styles.navigationItem}>
@@ -70,7 +79,7 @@ function Header() {
                 onClick={closeMenu}
                 offset={-100}
               >
-                Oferta
+                {t("offer")}
               </ScrollLink>
             </li>
             <li className={styles.navigationItem}>
@@ -82,16 +91,27 @@ function Header() {
                 onClick={closeMenu}
                 offset={-100}
               >
-                Kontakt
+                {t("contact")}
               </ScrollLink>
             </li>
             <li className={styles.navigationItem}>
               <a href="/app" className={styles.navigationLink}>
-                Aplikacja
+                {t("application")}
               </a>
             </li>
           </ul>
         </nav>
+        <div className={styles.languageSwitcher}>
+          <button onClick={() => changeLanguage("en")}>
+            <img src={ukFlag} alt="English" />
+          </button>
+          <button onClick={() => changeLanguage("de")}>
+            <img src={germanyFlag} alt="German" />
+          </button>
+          <button onClick={() => changeLanguage("pl")}>
+            <img src={polandFlag} alt="Polish" />
+          </button>
+        </div>
       </div>
     </header>
   );

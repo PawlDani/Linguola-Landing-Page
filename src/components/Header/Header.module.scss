@@ -37,6 +37,14 @@
   .navigationItem {
     padding: 0 20px;
 
+    @media (max-width: 930px) {
+      padding: 0 10px;
+    }
+
+    @media (max-width: 820px) {
+      padding: 0 5px;
+    }
+
     &:last-child {
       animation: wobble-ver-left 2s infinite;
       animation-iteration-count: 3;
@@ -48,7 +56,6 @@
 
     .navigationLink {
       text-align: center;
-      text-transform: uppercase;
       border-bottom: 4px solid transparent;
       text-decoration: none;
       padding: 25px 10px;
@@ -123,6 +130,37 @@
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0s;
+}
+
+.languageSwitcher {
+  display: flex;
+  align-items: center;
+
+  button {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    padding: 0;
+    cursor: pointer;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      min-width: 30px;
+      height: 30px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
 }
 
 @keyframes wobble-ver-left {

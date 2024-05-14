@@ -57,7 +57,6 @@
       font-family: $mainFontFamily;
 
       h1 {
-        text-transform: uppercase;
         margin-bottom: 20px;
         font-size: $h1FontSize;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -67,7 +66,6 @@
       p {
         color: $mainColor;
         font-size: $h2FontSize;
-        text-transform: uppercase;
       }
 
       @media (max-width: 1200px) {
