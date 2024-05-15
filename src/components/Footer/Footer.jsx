@@ -3,8 +3,11 @@ import { Link as ScrollLink } from "react-scroll";
 import styles from "./Footer.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className={styles.footer}>
       <div className={`${styles.footerContainer} container`}>
@@ -15,7 +18,7 @@ function Footer() {
             smooth={true}
             duration={1500}
           >
-            Start
+            {t("footer.start")}
           </ScrollLink>
           <ScrollLink
             to="benefits"
@@ -24,7 +27,7 @@ function Footer() {
             duration={1500}
             offset={-100}
           >
-            O nas
+            {t("footer.aboutUs")}
           </ScrollLink>
           <ScrollLink
             to="programs"
@@ -33,7 +36,7 @@ function Footer() {
             duration={1500}
             offset={-100}
           >
-            Oferta
+            {t("footer.offer")}
           </ScrollLink>
           <ScrollLink
             to="contact"
@@ -41,7 +44,7 @@ function Footer() {
             smooth={true}
             duration={1500}
           >
-            Kontakt
+            {t("footer.contact")}
           </ScrollLink>
         </div>
         <div className={styles.footerSocials}>
@@ -65,7 +68,7 @@ function Footer() {
 
         <div className={styles.footerCopy}>
           <p>
-            © {new Date().getFullYear()} Linguola. Wszelkie prawa zastrzeżone.
+            © {new Date().getFullYear()} Linguola. {t("footer.rightsReserved")}
           </p>
         </div>
       </div>

@@ -29,6 +29,7 @@
       font-size: $h2FontSize;
       font-family: $mainFontFamily;
       color: $textColor;
+      text-align: center;
       padding: 0 0 10px 0;
       margin-bottom: 30px;
       border-bottom: 4px solid $textColor;
@@ -67,7 +68,7 @@
         max-width: 100px;
         margin: 0;
       }
-  
+
       @media (max-width: 1102px) {
         max-width: 70%;
         margin: 10px auto;
@@ -97,7 +98,7 @@
         @media (max-width: 1220px) {
           width: auto;
         }
-  
+
         @media (max-width: 1102px) {
           min-height: auto;
         }
@@ -125,7 +126,7 @@
   .businessBenefits {
     flex-direction: column;
     .businessBenefitsSingle {
-      flex-basis: 100%; 
+      flex-basis: 100%;
     }
   }
 }

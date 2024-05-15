@@ -1,14 +1,32 @@
 import React from "react";
 import styles from "./IndividualBenefits.module.scss";
-import checkmarkIcon from "../../assets/checkmark.svg"; 
+import checkmarkIcon from "../../assets/checkmark.svg";
+import { useTranslation } from "react-i18next";
 
 function IndividualBenefits() {
+  const { t } = useTranslation();
+
+  const benefitsData = [
+    {
+      header: t("individualBenefits.personalizedApproach.header"),
+      description: t("individualBenefits.personalizedApproach.description"),
+    },
+    {
+      header: t("individualBenefits.flexibleSchedule.header"),
+      description: t("individualBenefits.flexibleSchedule.description"),
+    },
+    {
+      header: t("individualBenefits.skillDevelopment.header"),
+      description: t("individualBenefits.skillDevelopment.description"),
+    },
+  ];
+
   return (
     <section className={styles.individual} id="individual">
       <div className={`${styles.individualContent} container`}>
         <div className={styles.individualHeader}>
           <h1 className={styles.individualHeaderText}>
-            Czym wyróżniają się zajęcia indywidualne
+            {t("individualBenefits.title")}
           </h1>
         </div>
         <div className={styles.individualBenefits}>
@@ -32,23 +50,5 @@ function IndividualBenefits() {
     </section>
   );
 }
-
-const benefitsData = [
-  {
-    header: "Spersonalizowane podejście",
-    description:
-      "Twój nauczyciel dostosuje program do Twoich konkretnych celów i poziomu zaawansowania. Każda lekcja będzie zgodna z Twoimi oczekiwaniami.",
-  },
-  {
-    header: "Elastyczny harmonogram",
-    description:
-      "Kursy indywidualne dostosowują się do Twojego tempa życia. Umów się na lekcje zgodnie z własnym harmonogramem, aby nauka była wygodna i efektywna.",
-  },
-  {
-    header: "Rozwinięcie umiejętności",
-    description:
-      "Niezależnie od tego, czy chcesz osiągnąć doskonałą gramatykę, biegle się porozumiewać, czy zdobyć ważny certyfikat językowy - kurs indywidualny pomoże osiągnąć Ci twoje cele.",
-  },
-];
 
 export default IndividualBenefits;

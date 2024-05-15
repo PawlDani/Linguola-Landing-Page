@@ -1,32 +1,32 @@
 import React from "react";
 import styles from "./BusinessBenefits.module.scss";
 import checkmarkIcon from "../../assets/checkmark.svg";
-
-const businessBenefitsData = [
-  {
-    header: "Prawdziwe przypadki z branży",
-    description:
-      "Autentyczne przypadki biznesowe na zajęciach umożliwiają praktyczne zastosowanie języka w kontekście zawodowym. To idealna okazja do rozwinięcia umiejętności komunikacyjnych w prawdziwych sytuacjach biznesowych.",
-  },
-  {
-    header: "Obszerna gama tematów",
-    description:
-      "Bez względu na obszar biznesu, który Cię interesuje, nasze zajęcia obejmują szeroką gamę tematów. Kursy grupowe przygotują Cię do podjęcia pracy w różnych dziedzinach biznesu.",
-  },
-  {
-    header: "Nacisk na słownictwo branżowe",
-    description:
-      "Nauka specjalistycznej terminologii pomoże Ci w poszukiwaniu pracy w wymarzonej branży lub w rozwoju dotychczasowej kariery. Zajęcia pomagają zyskać pewność w komunikacji w zakresie własnej specjalizacji.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 function BusinessBenefits() {
+  const { t } = useTranslation();
+
+  const businessBenefitsData = [
+    {
+      header: t("businessBenefits.realCases.header"),
+      description: t("businessBenefits.realCases.description"),
+    },
+    {
+      header: t("businessBenefits.wideRange.header"),
+      description: t("businessBenefits.wideRange.description"),
+    },
+    {
+      header: t("businessBenefits.industryVocabulary.header"),
+      description: t("businessBenefits.industryVocabulary.description"),
+    },
+  ];
+
   return (
     <section className={styles.business} id="business">
       <div className={`${styles.businessContent} container`}>
         <div className={styles.businessHeader}>
           <h1 className={styles.businessHeaderText}>
-            Nasze zajęcia z języka biznesowego są wyjątkowe
+            {t("businessBenefits.title")}
           </h1>
         </div>
         <div className={styles.businessBenefits}>

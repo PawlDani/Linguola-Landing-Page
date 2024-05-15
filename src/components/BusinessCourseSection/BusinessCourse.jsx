@@ -6,8 +6,10 @@ import kursyBiznesoweAlt from "../../assets/kursyBiznesoweAlt.webp";
 import unitedKingdomFlag from "../../assets/united-kingdom.png";
 import germanyFlag from "../../assets/germany.png";
 import Button from "../Buttons/Button";
+import { useTranslation } from "react-i18next";
 
 function BusinessCourse() {
+  const { t } = useTranslation();
   const [currentImage, setCurrentImage] = useState(kursyBiznesoweImage);
 
   useEffect(() => {
@@ -30,53 +32,53 @@ function BusinessCourse() {
     <section className={styles.businessCourse} id="businessCourse">
       <div className={`${styles.businessCourseContent} container`}>
         <div className={styles.businessCourseImage}>
-          <img src={currentImage} alt="Business Courses" />
+          <img src={currentImage} alt={t("businessCourse.imageAlt")} />
         </div>
         <div className={styles.businessCourseTypes}>
           <div className={styles.businessCourseHeader}>
             <h3 className={styles.businessCourseHeaderText}>
-              JĘZYKI SPECJALISTYCZNE - KURSY BIZNESOWE
+              {t("businessCourse.title")}
             </h3>
             <p className={styles.businessCourseHeaderDescription}>
-              Kursy języka specjalistycznego dostępne są w formie zajęć
-              indywidualnych i grupowych. <br></br> Zajęcia obejmują różnorodne
-              aspekty biznesu, w tym szeroko pojętą komunikację biznesową z
-              obszarów takich jak finanse, logistyka, handel, marketing,
-              zarządzanie i obsługa klienta.
+              {t("businessCourse.description")}
             </p>
           </div>
           <div className={styles.businessCoursePackages}>
             <div className={styles.businessCoursePackage}>
-              <h3 className={styles.businessCoursePackageHeader}>PAKIET</h3>
-              <p>Kurs indywidualny</p>
-              <p>Kurs grupowy</p>
+              <h3 className={styles.businessCoursePackageHeader}>
+                {t("businessCourse.package")}
+              </h3>
+              <p>{t("businessCourse.individualCourse")}</p>
+              <p>{t("businessCourse.groupCourse")}</p>
             </div>
             <div className={styles.businessCoursePricing}>
-              <h3 className={styles.businessCoursePricingHeader}>CENA</h3>
-              <p>130 zł / h</p>
-              <p>80 zł / h</p>
+              <h3 className={styles.businessCoursePricingHeader}>
+                {t("businessCourse.price")}
+              </h3>
+              <p>{t("businessCourse.priceIndividual")}</p>
+              <p>{t("businessCourse.priceGroup")}</p>
             </div>
           </div>
           <div className={styles.businessCourseLanguages}>
             <h3 className={styles.businessCourseLanguagesHeader}>
-              DOSTĘPNE JĘZYKI
+              {t("businessCourse.availableLanguages")}
             </h3>
             <div className={styles.languages}>
               <p>
                 <img
                   src={unitedKingdomFlag}
-                  alt="English flag"
+                  alt={t("businessCourse.englishFlag")}
                   className={styles.flag}
                 />
-                Angielski
+                {t("businessCourse.english")}
               </p>
               <p>
                 <img
                   src={germanyFlag}
-                  alt="German flag"
+                  alt={t("businessCourse.germanFlag")}
                   className={styles.flag}
                 />
-                Niemiecki
+                {t("businessCourse.german")}
               </p>
             </div>
             <div className={styles.businessCourseBtn}>
@@ -86,7 +88,9 @@ function BusinessCourse() {
                 duration={1500}
                 offset={-100}
               >
-                <Button variant="primary">CZYTAJ WIĘCEJ</Button>
+                <Button variant="primary">
+                  {t("businessCourse.readMore")}
+                </Button>
               </ScrollLink>
             </div>
           </div>

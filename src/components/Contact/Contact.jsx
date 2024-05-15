@@ -3,8 +3,8 @@ import emailjs from "emailjs-com";
 import styles from "./Contact.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Button from "../Buttons/Button";
+import { useTranslation } from "react-i18next";
 
 function Modal({ isOpen, message, onClose }) {
   if (!isOpen) return null;
@@ -20,6 +20,7 @@ function Modal({ isOpen, message, onClose }) {
 }
 
 function Contact() {
+  const { t } = useTranslation();
   const [formFeedback, setFormFeedback] = useState({
     isOpen: false,
     message: "",
@@ -32,13 +33,13 @@ function Contact() {
     const message = e.target.message.value.trim();
     const errors = {};
 
-    if (!name) errors.name = "Imię jest wymagane.";
+    if (!name) errors.name = t("contact.errors.nameRequired");
     if (!email) {
-      errors.email = "Email jest wymagany.";
+      errors.email = t("contact.errors.emailRequired");
     } else if (!/\S+@\S+\.\S+/.test(email)) {
-      errors.email = "Podany email jest nieprawidłowy.";
+      errors.email = t("contact.errors.invalidEmail");
     }
-    if (!message) errors.message = "Wiadomość jest wymagana.";
+    if (!message) errors.message = t("contact.errors.messageRequired");
 
     return errors;
   };
@@ -62,8 +63,7 @@ function Contact() {
         (result) => {
           setFormFeedback({
             isOpen: true,
-            message:
-              "Dziękujemy za Twoją wiadomość. Skontaktujemy się z Tobą wkrótce.",
+            message: t("contact.formFeedback.success"),
           });
           console.log(result.text);
           e.target.reset();
@@ -72,8 +72,7 @@ function Contact() {
         (error) => {
           setFormFeedback({
             isOpen: true,
-            message:
-              "Wiadomość nie została wysłana. Spróbuj skontaktować się z nami bezpośrednio przez telefon lub email.",
+            message: t("contact.formFeedback.failure"),
           });
           console.log(error.text);
         }
@@ -84,38 +83,47 @@ function Contact() {
 
   return (
     <section className={styles.contactSection} id="contact">
-      {/* Contact form and modal code remains the same */}
       <div className={`${styles.contactContainer} container`}>
         <div className={styles.formWrapper}>
           <form className={styles.contactForm} onSubmit={sendEmail}>
             <div className={styles.inputGroup}>
-              <input type="text" placeholder="Imię" name="name" />
+              <input
+                type="text"
+                placeholder={t("contact.form.name")}
+                name="name"
+              />
               {errors.name && <p className={styles.error}>{errors.name}</p>}
             </div>
             <div className={styles.inputGroupSplit}>
-              <input type="email" placeholder="Email" name="email" />
-              <input type="tel" placeholder="Numer telefonu" name="phone" />
+              <input
+                type="email"
+                placeholder={t("contact.form.email")}
+                name="email"
+              />
+              <input
+                type="tel"
+                placeholder={t("contact.form.phone")}
+                name="phone"
+              />
             </div>
             {errors.email && <p className={styles.error}>{errors.email}</p>}
             <div className={styles.inputGroup}>
-              <textarea placeholder="Wiadomość" name="message"></textarea>
+              <textarea
+                placeholder={t("contact.form.message")}
+                name="message"
+              ></textarea>
               {errors.message && (
                 <p className={styles.error}>{errors.message}</p>
               )}
             </div>
             <Button variant="primary" type="submit">
-              Wyślij
+              {t("contact.form.send")}
             </Button>
           </form>
         </div>
         <div className={styles.infoWrapper}>
-          <h2>Kontakt</h2>
-          <p>
-            Jeśli potrzebujesz dodatkowych informacji, chciałbyś porozmawiać o
-            kwestiach związanych z naszymi kursami językowymi lub masz inne
-            pytania, skontaktuj się z nami za pomocą dostępnych danych
-            kontaktowych.
-          </p>
+          <h2>{t("contact.title")}</h2>
+          <p>{t("contact.description")}</p>
           <div className={styles.contactInfo}>
             <div className={styles.infoItem}>
               <a href="mailto:info@linguola.pl">

@@ -2,7 +2,7 @@
   "start": "Start",
   "about_us": "About Us",
   "offer": "Courses",
-  "contact": "Contact",
+  "contact-us": "Contact",
   "application": "Web App",
   "hero": {
     "challenge": "Your language journey",
@@ -55,5 +55,125 @@
     "priceOneTime": "€30 / h",
     "priceMonthly": "€28 / h",
     "priceQuarterly": "€25 / h"
-  }
-}
+  },
+    "individualBenefits": {
+      "title": "Benefits of individual lessons",
+      "personalizedApproach": {
+        "header": "Personalized approach",
+        "description": "Your teacher will tailor the program to your specific goals and proficiency level. Each lesson will be in line with your expectations."
+      },
+      "flexibleSchedule": {
+        "header": "Flexible schedule",
+        "description": "Individual courses are designed to fit your pace.Schedule lessons according to your own timetable to make learning convenient and effective."
+      },
+      "skillDevelopment": {
+        "header": "Skill development",
+        "description": "Whether you want to achieve perfect grammar, communicate fluently, or obtain an important language certificate - individual lessons will help you achieve your goals."
+      }
+    },
+    "groupCourse": {
+      "imageAlt": "Group courses",
+      "title": "Group courses",
+      "description": "Learn a new language in small groups, where learning becomes an interactive adventure. Intensive classes guarantee quick results, allowing you to develop your language skills in a dynamic and friendly way.",
+      "package": "Package",
+      "basicCourse": "Basic course",
+      "intermediateCourse": "Intermediate course",
+      "advancedCourse": "Advanced course",
+      "price": "Price",
+      "priceBasic": "€12 / person",
+      "priceIntermediate": "€15 / person",
+      "priceAdvanced": "€18 / person",
+      "availableLanguages": "Available languages",
+      "englishFlag": "English flag",
+      "germanFlag": "German flag",
+      "italianFlag": "Italian flag",
+      "english": "English",
+      "german": "German",
+      "italian": "Italian",
+      "readMore": "Read more"
+    },
+    "groupBenefits": {
+      "title": "Why consider our group courses?",
+      "smallGroups": {
+        "header": "Small groups, big benefits",
+        "description": "Our 4-5 person groups allow the teacher to take a more individualized approach to each participant. Collaboration in a small community promotes faster assimilation of the material."
+      },
+      "motivatingGroup": {
+        "header": "A group of motivating students",
+        "description": "Our courses are not just about listening to lectures, but above all about active participation. Group exercises, language games, and role-plays will make learning an engaging interaction."
+      },
+      "selfStudyMaterials": {
+        "header": "Self-study materials",
+        "description": "We offer a rich set of materials that enable independent work outside of classes. This is a great opportunity to reinforce knowledge and develop skills at your own pace."
+      }
+    },
+    
+      "businessCourse": {
+        "imageAlt": "Business courses",
+        "title": "Specialized language - business courses",
+        "description": "Business language courses are available in the form of individual and group classes. The lessons cover various aspects of business, including broad business communication from areas such as finance, logistics, trade, marketing, management, and customer service.",
+        "package": "Package",
+        "individualCourse": "Individual course",
+        "groupCourse": "Group course",
+        "price": "Price",
+        "priceIndividual": "€30 / h",
+        "priceGroup": "€18 / h",
+        "availableLanguages": "Available languages",
+        "englishFlag": "English flag",
+        "germanFlag": "German flag",
+        "english": "English",
+        "german": "German",
+        "readMore": "Read more"
+      },
+      
+        "businessBenefits": {
+          "title": "Enhance your business language skills",
+          "realCases": {
+            "header": "Real industry cases",
+            "description": "Authentic business cases practiced during classes allow you to develop communication skills in business situations."
+          },
+          "wideRange": {
+            "header": "Extensive range of topics",
+            "description": "No matter the area of business that interests you, our classes cover a wide range of topics. Our group courses will prepare you to work in various business fields."
+          },
+          "industryVocabulary": {
+            "header": "Focus on industry vocabulary",
+            "description": "Learning specialized terminology will help you in your job search in your desired industry or in advancing on your current career path."
+          }
+        },
+        
+          "contact": {
+            "title": "Contact",
+            "description": "If you need more information, would like to discuss something related to our language courses, or have other questions, please don't hesitate to contact us using the available contact details.",
+            "form": {
+              "name": "Name",
+              "email": "Email",
+              "phone": "Phone number",
+              "message": "Message",
+              "send": "Send"
+            },
+            "formFeedback": {
+              "success": "Thank you for your message. We will get in touch with you soon.",
+              "failure": "The message was not sent. Please try to contact us directly by phone or email."
+            },
+            "errors": {
+              "nameRequired": "Name is required.",
+              "emailRequired": "Email is required.",
+              "invalidEmail": "The provided email is invalid.",
+              "messageRequired": "Message is required."
+            }
+          },
+          
+            "footer": {
+              "start": "Start",
+              "aboutUs": "About Us",
+              "offer": "Courses",
+              "contact": "Contact",
+              "rightsReserved": "All rights reserved."
+            }
+          }          
+        
+    
+  
+  
+  

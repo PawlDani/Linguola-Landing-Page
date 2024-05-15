@@ -2,7 +2,7 @@
   "start": "Start",
   "about_us": "O nas",
   "offer": "Oferta",
-  "contact": "Kontakt",
+  "contact-us": "Kontakt",
   "application": "Aplikacja",
   "hero": {
     "challenge": "Twoje językowe wyzwanie",
@@ -31,7 +31,8 @@
     "coursesForCompanies": "Kursy dla firm",
     "groupClasses": "Zajęcia grupowe dla pracowników",
     "learnMore": "Dowiedz się więcej"
-  },"individualCourse": {
+  },
+  "individualCourse": {
     "imageAlt": "Kursy indywidualne",
     "title": "Kursy indywidualne",
     "description": "Kursy indywidualne, stworzone z myślą o twoich potrzebach językowych! Jeśli zależy ci na płynnym wyrażaniu się, perfekcji gramatycznej lub przygotowaniu do egzaminów i certyfikatów, zajęcia indywidualne są idealnym rozwiązaniem.",
@@ -54,5 +55,127 @@
     "priceOneTime": "130 zł / h",
     "priceMonthly": "120 zł / h",
     "priceQuarterly": "110 zł / h"
-  }
-}
+  },
+    "individualBenefits": {
+      "title": "Czym wyróżniają się zajęcia indywidualne",
+      "personalizedApproach": {
+        "header": "Spersonalizowane podejście",
+        "description": "Twój nauczyciel dostosuje program do Twoich konkretnych celów i poziomu zaawansowania. Każda lekcja będzie zgodna z Twoimi oczekiwaniami."
+      },
+      "flexibleSchedule": {
+        "header": "Elastyczny harmonogram",
+        "description": "Kursy indywidualne dostosowują się do Twojego tempa życia. Umów się na lekcje zgodnie z własnym harmonogramem, aby nauka była wygodna i efektywna."
+      },
+      "skillDevelopment": {
+        "header": "Rozwinięcie umiejętności",
+        "description": "Niezależnie od tego, czy chcesz osiągnąć doskonałą gramatykę, biegle się porozumiewać, czy zdobyć ważny certyfikat językowy - kurs indywidualny pomoże osiągnąć Ci twoje cele."
+      }
+    },
+        "groupCourse": {
+          "imageAlt": "Kursy grupowe",
+          "title": "Kursy grupowe",
+          "description": "Kursy grupowe, gdzie nauka staje się interaktywną przygodą w małych, zgranych grupach! Intensywne zajęcia gwarantują szybkie efekty, umożliwiając Ci rozwijanie umiejętności językowych w dynamiczny i przyjazny sposób.",
+          "package": "Pakiet",
+          "basicCourse": "Kurs podstawowy",
+          "intermediateCourse": "Kurs średniozaawansowany",
+          "advancedCourse": "Kurs zaawansowany",
+          "price": "Cena",
+          "priceBasic": "55 zł / os.",
+          "priceIntermediate": "65 zł / os.",
+          "priceAdvanced": "70 zł / os.",
+          "availableLanguages": "Dostępne języki",
+          "englishFlag": "Flaga angielska",
+          "germanFlag": "Flaga niemiecka",
+          "italianFlag": "Flaga włoska",
+          "english": "Angielski",
+          "german": "Niemiecki",
+          "italian": "Włoski",
+          "readMore": "Czytaj więcej"
+        },
+        
+          "groupBenefits": {
+            "title": "Czym wyróżniają się kursy grupowe",
+            "smallGroups": {
+              "header": "Małe grupy, duże korzyści",
+              "description": "Nasze grupy 4-5 osobowe pozwalają na bardziej indywidualne podejście nauczyciela do każdego uczestnika. Współpraca w małej społeczności sprzyja szybszemu przyswajaniu materiału."
+            },
+            "motivatingGroup": {
+              "header": "Grupa motywujących się uczniów",
+              "description": "Nasze kursy to nie tylko słuchanie wykładów, ale przede wszystkim aktywne uczestnictwo. Ćwiczenia grupowe, gry językowe i role-play sprawią, że nauka stanie się ciekawą interakcją."
+            },
+            "selfStudyMaterials": {
+              "header": "Materiały do pracy własnej",
+              "description": "Oferujemy bogaty zestaw materiałów, które umożliwiają samodzielną pracę poza zajęciami. To idealna okazja do utrwalenia wiedzy i rozwinięcia umiejętności w własnym tempie."
+            }
+          },
+          
+            "businessCourse": {
+              "imageAlt": "Kursy biznesowe",
+              "title": "Języki specjalistyczne - kursy biznesowe",
+              "description": "Kursy języka specjalistycznego dostępne są w formie zajęć indywidualnych i grupowych. Zajęcia obejmują różnorodne aspekty biznesu, w tym szeroko pojętą komunikację biznesową z obszarów takich jak finanse, logistyka, handel, marketing, zarządzanie i obsługa klienta.",
+              "package": "Pakiet",
+              "individualCourse": "Kurs indywidualny",
+              "groupCourse": "Kurs grupowy",
+              "price": "Cena",
+              "priceIndividual": "130 zł / h",
+              "priceGroup": "80 zł / h",
+              "availableLanguages": "Dostępne języki",
+              "englishFlag": "Flaga angielska",
+              "germanFlag": "Flaga niemiecka",
+              "english": "Angielski",
+              "german": "Niemiecki",
+              "readMore": "Czytaj więcej"
+            },
+            
+              "businessBenefits": {
+                "title": "Nasze zajęcia z języka biznesowego są wyjątkowe",
+                "realCases": {
+                  "header": "Prawdziwe przypadki z branży",
+                  "description": "Autentyczne przypadki biznesowe na zajęciach umożliwiają praktyczne zastosowanie języka w kontekście zawodowym. To idealna okazja do rozwinięcia umiejętności komunikacyjnych w prawdziwych sytuacjach biznesowych."
+                },
+                "wideRange": {
+                  "header": "Obszerna gama tematów",
+                  "description": "Bez względu na obszar biznesu, który Cię interesuje, nasze zajęcia obejmują szeroką gamę tematów. Kursy grupowe przygotują Cię do podjęcia pracy w różnych dziedzinach biznesu."
+                },
+                "industryVocabulary": {
+                  "header": "Nacisk na słownictwo branżowe",
+                  "description": "Nauka specjalistycznej terminologii pomoże Ci w poszukiwaniu pracy w wymarzonej branży lub w rozwoju dotychczasowej kariery. Zajęcia pomagają zyskać pewność w komunikacji w zakresie własnej specjalizacji."
+                }
+              },
+              
+                "contact": {
+                  "title": "Kontakt",
+                  "description": "Jeśli potrzebujesz dodatkowych informacji, chciałbyś porozmawiać o kwestiach związanych z naszymi kursami językowymi lub masz inne pytania, skontaktuj się z nami za pomocą dostępnych danych kontaktowych.",
+                  "form": {
+                    "name": "Imię",
+                    "email": "Email",
+                    "phone": "Numer telefonu",
+                    "message": "Wiadomość",
+                    "send": "Wyślij"
+                  },
+                  "formFeedback": {
+                    "success": "Dziękujemy za Twoją wiadomość. Skontaktujemy się z Tobą wkrótce.",
+                    "failure": "Wiadomość nie została wysłana. Spróbuj skontaktować się z nami bezpośrednio przez telefon lub email."
+                  },
+                  "errors": {
+                    "nameRequired": "Imię jest wymagane.",
+                    "emailRequired": "Email jest wymagany.",
+                    "invalidEmail": "Podany email jest nieprawidłowy.",
+                    "messageRequired": "Wiadomość jest wymagana."
+                  }
+                },
+                
+                  "footer": {
+                    "start": "Start",
+                    "aboutUs": "O nas",
+                    "offer": "Oferta",
+                    "contact": "Kontakt",
+                    "rightsReserved": "Wszelkie prawa zastrzeżone."
+                  }
+                }
+                
+              
+              
+            
+          
+    

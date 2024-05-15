@@ -2,7 +2,7 @@
   "start": "Start",
   "about_us": "Über uns",
   "offer": "Kurse",
-  "contact": "Kontakt",
+  "contact-us": "Kontakt",
   "application": "App",
   "hero": {
     "challenge": "Dein Sprachabenteuer ",
@@ -55,5 +55,122 @@
     "priceOneTime": "€30 / h",
     "priceMonthly": "€28 / h",
     "priceQuarterly": "€25 / h"
-  }
-}
+  },
+  "individualBenefits": {
+    "title": "Was macht den 1:1 Unterricht besonders?",
+    "personalizedApproach": {
+      "header": "Personalisierter Ansatz",
+      "description": "Ihr Lehrer wird das Programm an Ihre individuellen Ziele und Ihr Sprachniveau anpassen. Jede Lektion wird Ihren Erwartungen entsprechen."
+    },
+    "flexibleSchedule": {
+      "header": "Flexibler Zeitplan",
+      "description": "Einzelkurse sind an Ihr Lerntempo angepasst. Vereinbaren Sie Unterrichtsstunden nach Ihrem eigenen Zeitplan, um das Lernen bequem und effektiv zu gestalten."
+    },
+    "skillDevelopment": {
+      "header": "Gezieltes Lernen",
+      "description": "Egal, ob Sie perfekte Grammatik erreichen, fließend kommunizieren oder ein wichtiges Sprachzertifikat erhalten möchten - ein Einzelkurs hilft Ihnen, Ihre Ziele zu erreichen."
+    }
+  },
+  "groupCourse": {
+    "imageAlt": "Gruppenkurse",
+    "title": "Gruppenkurse",
+    "description": "In kleinen Gruppen wird das Lernen zu einem interaktiven Abenteuer. Intensiver Unterricht garantiert schnelle Ergebnisse und ermöglicht es Ihnen, Ihre Sprachkenntnisse dynamisch und gemeinsam mit anderen Teilnehmern zu verbessern.",
+    "package": "Paket",
+    "basicCourse": "Grundkurs",
+    "intermediateCourse": "Mittelstufe",
+    "advancedCourse": "Fortgeschritten",
+    "price": "Preis",
+    "priceBasic": "€12 / Person",
+    "priceIntermediate": "€15 / Person",
+    "priceAdvanced": "€17 / Person",
+    "availableLanguages": "Verfügbare Sprachen",
+    "englishFlag": "Englische Flagge",
+    "germanFlag": "Deutsche Flagge",
+    "italianFlag": "Italienische Flagge",
+    "english": "Englisch",
+    "german": "Deutsch",
+    "italian": "Italienisch",
+    "readMore": "Mehr erfahren"
+  },
+    "groupBenefits": {
+      "title": "Interaktives Lernen in kleinen Gruppen",
+      "smallGroups": {
+        "header": "Kleine Gruppen, große Vorteile",
+        "description": "Unsere 4/5 Personen-Gruppen ermöglichen es dem Lehrer, einen individuelleren Ansatz für jeden Schüler zu wählen. Die Zusammenarbeit in einer kleinen Gruppe fördert den Lernprozess."
+      },
+      "motivatingGroup": {
+        "header": "Gegenseitige Motivation in der Gruppe",
+        "description": "Unsere Kurse bestehen nicht nur aus Vorträgen, sondern vor allem aus aktiver Teilnahme. Gruppenübungen, Sprachspiele und Rollenspiele machen das Lernen zu einer interessanten Interaktion."
+      },
+      "selfStudyMaterials": {
+        "header": "Lernmaterialien zum Selbststudium",
+        "description": "Wir bieten eine Vielzahl von Lernmaterialien, die unabhängiges Arbeiten außerhalb des Unterrichts ermöglichen. Dies ist eine großartige Gelegenheit, Wissen in ihrem eigenen Tempo zu meistern."
+      }
+    },
+    
+      "businessCourse": {
+        "imageAlt": "Businesskurse",
+        "title": "Fachsprache - Businesskurse",
+        "description": "Businesskurse sind in Form von Einzel- und Gruppenunterricht verfügbar. Der Unterricht deckt verschiedene Aspekte des Geschäftslebens ab, einschließlich der umfassenden Geschäftskommunikation in Bereichen wie Finanzen, Logistik, Handel, Marketing, Management und Kundenservice.",
+        "package": "Paket",
+        "individualCourse": "Einzelkurs",
+        "groupCourse": "Gruppenkurs",
+        "price": "Preis",
+        "priceIndividual": "€30 / h",
+        "priceGroup": "€18 / h",
+        "availableLanguages": "Verfügbare Sprachen",
+        "englishFlag": "Englische Flagge",
+        "germanFlag": "Deutsche Flagge",
+        "english": "Englisch",
+        "german": "Deutsch",
+        "readMore": "Mehr erfahren"
+      },
+      
+        "businessBenefits": {
+          "title": "Business-Sprachkurse zur beruflichen Weiterentwicklung",
+          "realCases": {
+            "header": "Echte Branchenfälle",
+            "description": "Authentische Situationen im Unterricht ermöglichen die praktische Anwendung der Sprache in einem professionellen Kontext. Dies ist eine ideale Gelegenheit, Kommunikationsfähigkeiten in realen Geschäftssituationen zu entwickeln."
+          },
+          "wideRange": {
+            "header": "Umfangreiche Themenbereiche",
+            "description": "Unabhängig davon, welcher Geschäftsbereich Sie interessiert, unsere Kurse bieten eine breite Auswahl an Themen. Gruppenkurse bereiten Sie auf die Arbeit in verschiedenen Geschäftsbereichen vor."
+          },
+          "industryVocabulary": {
+            "header": "Branchenspezifisches Vokabular",
+            "description": "Das Erlernen spezieller Fachterminologie hilft Ihnen bei der Jobsuche in Ihrer Wunschbranche oder bei der Weiterentwicklung Ihrer aktuellen Karriere. Die Kurse helfen Ihnen, ihre Kommunikationsfähigkeiten innerhalb Ihrer Spezialisierung zu verbessern."
+          }
+        },
+        
+          "contact": {
+            "title": "Kontakt",
+            "description": "Wenn Sie weitere Informationen benötigen, Fragen zu unseren Sprachkursen besprechen möchten oder andere Fragen haben, kontaktieren Sie uns bitte über die verfügbaren Kontaktdaten.",
+            "form": {
+              "name": "Name",
+              "email": "E-Mail",
+              "phone": "Telefonnummer",
+              "message": "Nachricht",
+              "send": "Senden"
+            },
+            "formFeedback": {
+              "success": "Danke für Ihre Nachricht. Wir werden uns bald mit Ihnen in Verbindung setzen.",
+              "failure": "Die Nachricht wurde nicht gesendet. Bitte versuchen Sie, uns direkt telefonisch oder per E-Mail zu kontaktieren."
+            },
+            "errors": {
+              "nameRequired": "Name ist erforderlich.",
+              "emailRequired": "E-Mail ist erforderlich.",
+              "invalidEmail": "Die angegebene E-Mail ist ungültig.",
+              "messageRequired": "Nachricht ist erforderlich."
+            }
+          },
+          
+            "footer": {
+              "start": "Start",
+              "aboutUs": "Über uns",
+              "offer": "Kurse",
+              "contact": "Kontakt",
+              "rightsReserved": "Alle Rechte vorbehalten."
+            }
+          }
+          
+        

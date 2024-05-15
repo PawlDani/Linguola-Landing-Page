@@ -91,7 +91,7 @@ function Header() {
                 onClick={closeMenu}
                 offset={-100}
               >
-                {t("contact")}
+                {t("contact-us")}
               </ScrollLink>
             </li>
             <li className={styles.navigationItem}>

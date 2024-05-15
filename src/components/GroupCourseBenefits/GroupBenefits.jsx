@@ -1,33 +1,31 @@
 import React from "react";
 import styles from "./GroupBenefits.module.scss";
 import checkmarkIcon from "../../assets/checkmark.svg";
-
-const groupBenefitsData = [
-  {
-    header: "Małe grupy, duże korzyści",
-    description:
-      "Nasze grupy 4-5 osobowe pozwalają na bardziej indywidualne podejście nauczyciela do każdego uczestnika. Współpraca w małej społeczności sprzyja szybszemu przyswajaniu materiału.",
-  },
-  {
-    header: "Grupa motywujących się uczniów",
-    description:
-      "Nasze kursy to nie tylko słuchanie wykładów, ale przede wszystkim aktywne uczestnictwo. Ćwiczenia grupowe, gry językowe i role-play sprawią, że nauka stanie się ciekawą interakcją.",
-  },
-  {
-    header: "Materiały do pracy własnej",
-    description:
-      "Oferujemy bogaty zestaw materiałów, które umożliwiają samodzielną pracę poza zajęciami. To idealna okazja do utrwalenia wiedzy i rozwinięcia umiejętności w własnym tempie.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 function GroupBenefits() {
+  const { t } = useTranslation();
+
+  const groupBenefitsData = [
+    {
+      header: t("groupBenefits.smallGroups.header"),
+      description: t("groupBenefits.smallGroups.description"),
+    },
+    {
+      header: t("groupBenefits.motivatingGroup.header"),
+      description: t("groupBenefits.motivatingGroup.description"),
+    },
+    {
+      header: t("groupBenefits.selfStudyMaterials.header"),
+      description: t("groupBenefits.selfStudyMaterials.description"),
+    },
+  ];
+
   return (
     <section className={styles.group} id="group">
       <div className={`${styles.groupContent} container`}>
         <div className={styles.groupHeader}>
-          <h1 className={styles.groupHeaderText}>
-            Czym wyróżniają się kursy grupowe
-          </h1>
+          <h1 className={styles.groupHeaderText}>{t("groupBenefits.title")}</h1>
         </div>
         <div className={styles.groupBenefits}>
           {groupBenefitsData.map((benefit, index) => (

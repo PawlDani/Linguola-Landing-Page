@@ -7,8 +7,10 @@ import unitedKingdomFlag from "../../assets/united-kingdom.png";
 import germanyFlag from "../../assets/germany.png";
 import italyFlag from "../../assets/italy.png";
 import Button from "../Buttons/Button";
+import { useTranslation } from "react-i18next";
 
 function GroupCourse() {
+  const { t } = useTranslation();
   const [currentImage, setCurrentImage] = useState(groupCourseImage);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -33,95 +35,97 @@ function GroupCourse() {
     <section className={styles.groupCourse} id="groupCourse">
       <div className={`${styles.groupCourseContent} container`}>
         <div className={styles.groupCourseImage}>
-          <img src={currentImage} alt="Group Courses" />
+          <img src={currentImage} alt={t("groupCourse.imageAlt")} />
         </div>
         <div className={styles.groupCourseTypes}>
           <div className={styles.groupCourseHeader}>
-            <h3 className={styles.groupCourseHeaderText}>KURSY GRUPOWE</h3>
+            <h3 className={styles.groupCourseHeaderText}>
+              {t("groupCourse.title")}
+            </h3>
             <p className={styles.groupCourseHeaderDescription}>
-              Kursy grupowe, gdzie nauka staje się interaktywną przygodą w
-              małych, zgranych grupach! Intensywne zajęcia gwarantują szybkie
-              efekty, umożliwiając Ci rozwijanie umiejętności językowych w
-              dynamiczny i przyjazny sposób.
+              {t("groupCourse.description")}
             </p>
           </div>
           <div className={styles.groupCoursePackages}>
             <div className={styles.groupCoursePackage}>
-              <h3 className={styles.groupCoursePackageHeader}>PAKIET</h3>
+              <h3 className={styles.groupCoursePackageHeader}>
+                {t("groupCourse.package")}
+              </h3>
 
               {windowWidth <= 435 ? (
                 <>
                   <p>
-                    Kurs podstawowy <br></br> [od 0]
+                    {t("groupCourse.basicCourse")} <br /> [A1-A2]
                   </p>
-                  <br></br>
+                  <br />
                   <p>
-                    Kurs średniozaawansowany
-                    <br></br> [poziom - B1]
+                    {t("groupCourse.intermediateCourse")} <br /> [B1]
                   </p>
-                  <br></br>
+                  <br />
                   <p>
-                    Kurs zaawansowany <br></br> [B2 i wyżej]
+                    {t("groupCourse.advancedCourse")} <br /> [B2+]
                   </p>
                 </>
               ) : (
                 <>
-                  <p>Kurs podstawowy - od 0</p>
-                  <p>Kurs średniozaawansowany - B1</p>
-                  <p>Kurs zaawansowany - B2 i wyżej</p>
+                  <p>{t("groupCourse.basicCourse")} - [A1-A2]</p>
+                  <p>{t("groupCourse.intermediateCourse")} - [B1]</p>
+                  <p>{t("groupCourse.advancedCourse")} - [B2+]</p>
                 </>
               )}
             </div>
             <div className={styles.groupCoursePricing}>
-              <h3 className={styles.groupCoursePricingHeader}>CENA</h3>
+              <h3 className={styles.groupCoursePricingHeader}>
+                {t("groupCourse.price")}
+              </h3>
 
               {windowWidth <= 435 ? (
                 <>
-                  <p>55 zł / os.</p>
-                  <br></br>
-                  <br></br>
-                  <p>65 zł / os.</p>
-                  <br></br>
-                  <br></br>
-                  <p>70 zł / os.</p> 
+                  <p>{t("groupCourse.priceBasic")}</p>
+                  <br />
+                  <br />
+                  <p>{t("groupCourse.priceIntermediate")}</p>
+                  <br />
+                  <br />
+                  <p>{t("groupCourse.priceAdvanced")}</p>
                 </>
               ) : (
                 <>
-                  <p>55 zł / os.</p>
-                  <p>65 zł / os.</p>
-                  <p>70 zł / os.</p>
+                  <p>{t("groupCourse.priceBasic")}</p>
+                  <p>{t("groupCourse.priceIntermediate")}</p>
+                  <p>{t("groupCourse.priceAdvanced")}</p>
                 </>
               )}
             </div>
           </div>
           <div className={styles.groupCourseLanguages}>
             <h3 className={styles.groupCourseLanguagesHeader}>
-              DOSTĘPNE JĘZYKI
+              {t("groupCourse.availableLanguages")}
             </h3>
             <div className={styles.languages}>
               <p>
                 <img
                   src={unitedKingdomFlag}
-                  alt="English flag"
+                  alt={t("groupCourse.englishFlag")}
                   className={styles.flag}
                 />{" "}
-                Angielski
+                {t("groupCourse.english")}
               </p>
               <p>
                 <img
                   src={germanyFlag}
-                  alt="German flag"
+                  alt={t("groupCourse.germanFlag")}
                   className={styles.flag}
                 />{" "}
-                Niemiecki
+                {t("groupCourse.german")}
               </p>
               <p>
                 <img
                   src={italyFlag}
-                  alt="Italian flag"
+                  alt={t("groupCourse.italianFlag")}
                   className={styles.flag}
                 />{" "}
-                Włoski
+                {t("groupCourse.italian")}
               </p>
             </div>
             <div className={styles.groupCourseBtn}>
@@ -131,7 +135,7 @@ function GroupCourse() {
                 duration={1500}
                 offset={-100}
               >
-                <Button variant="primary">CZYTAJ WIĘCEJ</Button>
+                <Button variant="primary">{t("groupCourse.readMore")}</Button>
               </ScrollLink>
             </div>
           </div>
