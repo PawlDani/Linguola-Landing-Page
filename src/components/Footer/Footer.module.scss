@@ -61,8 +61,22 @@
   .footerCopy {
     font-size: 2.5rem;
     margin-top: 20px;
+
     p {
       font-size: 1.6rem;
+    }
+
+    a {
+      color: inherit; /* Inherit the color from the parent element */
+      text-decoration: none; /* Remove underline */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5px;
+    }
+
+    a:hover {
+      text-decoration: underline; /* Optional: Add underline on hover for better UX */
     }
 
     @media (max-width: 768px) {

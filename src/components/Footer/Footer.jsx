@@ -70,6 +70,11 @@ function Footer() {
           <p>
             © {new Date().getFullYear()} Linguola. {t("footer.rightsReserved")}
           </p>
+          <p>
+            <a href="/polityka-prywatnosci.html" className={styles.footerLink}>
+              {t("footer.privacyPolicy")}
+            </a>
+          </p>
         </div>
       </div>
     </footer>
