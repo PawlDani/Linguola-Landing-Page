@@ -150,7 +150,14 @@
               "email": "E-Mail",
               "phone": "Telefonnummer",
               "message": "Nachricht",
-              "send": "Senden"
+              "send": "Senden",
+              "dataConsent": "Ich stimme der Verarbeitung meiner personenbezogenen Daten zu",
+              "marketingConsent": "Ich stimme dem Erhalt von Marketinginformationen zu",
+              "fullDataConsent": "Ich stimme der Verarbeitung meiner personenbezogenen Daten durch Usługi Językowe Linguola gemäß der Datenschutzrichtlinie zu, um auf meine Anfrage über das Kontaktformular zu antworten.",
+              "fullMarketingConsent": "Ich stimme zu, Marketinginformationen und kommerzielle Angebote von Usługi Językowe Linguola an die von mir angegebene E-Mail-Adresse zu erhalten.",
+              "readMore": "Mehr lesen",
+              "hide": "Verbergen",
+              "close": "Schließen"
             },
             "formFeedback": {
               "success": "Danke für Ihre Nachricht. Wir werden uns bald mit Ihnen in Verbindung setzen.",

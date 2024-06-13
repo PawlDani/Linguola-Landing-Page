@@ -150,7 +150,14 @@
               "email": "Email",
               "phone": "Phone number",
               "message": "Message",
-              "send": "Send"
+              "send": "Send",
+              "dataConsent": "I consent to the processing of my personal data",
+              "marketingConsent": "I consent to receive marketing information",
+              "fullDataConsent": "I consent to the processing of my personal data by Usługi Językowe Linguola, in accordance with the privacy policy, in order to respond to my inquiry sent via the contact form.",
+              "fullMarketingConsent": "I consent to receive marketing information and commercial offers from Usługi Językowe Linguola at the email address provided by me.",
+              "readMore": "Read more",
+              "hide": "Hide",
+              "close": "Close"
             },
             "formFeedback": {
               "success": "Thank you for your message. We will get in touch with you soon.",

@@ -151,7 +151,14 @@
                     "email": "Email",
                     "phone": "Numer telefonu",
                     "message": "Wiadomość",
-                    "send": "Wyślij"
+                    "send": "Wyślij",
+                    "dataConsent": "Wyrażam zgodę na przetwarzanie moich danych osobowych",
+                    "marketingConsent": "Wyrażam zgodę na otrzymywanie informacji marketingowych",
+                    "fullDataConsent": "Wyrażam zgodę na przetwarzanie moich danych osobowych przez Usługi Językowe Linguola, zgodnie z polityką prywatności, w celu odpowiedzi na moje zapytanie przesłane za pomocą formularza kontaktowego.",
+                    "fullMarketingConsent": "Wyrażam zgodę na otrzymywanie od Usługi Językowe Linguola informacji marketingowych oraz ofert handlowych na podany przeze mnie adres e-mail.",
+                    "readMore": "Czytaj więcej",
+                    "hide": "Ukryj",
+                    "close": "Zamknij"
                   },
                   "formFeedback": {
                     "success": "Dziękujemy za Twoją wiadomość. Skontaktujemy się z Tobą wkrótce.",

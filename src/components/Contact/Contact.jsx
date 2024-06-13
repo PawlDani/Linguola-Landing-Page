@@ -6,14 +6,18 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Button from "../Buttons/Button";
 import { useTranslation } from "react-i18next";
 
-function Modal({ isOpen, message, onClose }) {
+function Modal({ isOpen, content, onClose }) {
+  const { t } = useTranslation();
+
   if (!isOpen) return null;
 
   return (
     <div className={styles.modalOverlay}>
       <div className={styles.modalContent}>
-        <p>{message}</p>
-        <button onClick={onClose}>OK</button>
+        <p>{content}</p>
+        <button className={styles.closeButton} onClick={onClose}>
+          {t("contact.form.close")}
+        </button>
       </div>
     </div>
   );
@@ -26,6 +30,9 @@ function Contact() {
     message: "",
   });
   const [errors, setErrors] = useState({});
+  const [isDataConsentOpen, setIsDataConsentOpen] = useState(false);
+  const [isMarketingConsentOpen, setIsMarketingConsentOpen] = useState(false);
+  const [modalContent, setModalContent] = useState("");
 
   const validateForm = (e) => {
     const name = e.target.name.value.trim();
@@ -81,6 +88,24 @@ function Contact() {
 
   const closeModal = () => setFormFeedback({ isOpen: false, message: "" });
 
+  const openConsentModal = (e, consentType) => {
+    e.preventDefault(); // Prevent the default behavior
+    e.stopPropagation(); // Prevent the checkbox from being checked
+    setModalContent(
+      consentType === "data"
+        ? t("contact.form.fullDataConsent")
+        : t("contact.form.fullMarketingConsent")
+    );
+    consentType === "data"
+      ? setIsDataConsentOpen(true)
+      : setIsMarketingConsentOpen(true);
+  };
+
+  const closeConsentModal = () => {
+    setIsDataConsentOpen(false);
+    setIsMarketingConsentOpen(false);
+  };
+
   return (
     <section className={styles.contactSection} id="contact">
       <div className={`${styles.contactContainer} container`}>
@@ -116,6 +141,39 @@ function Contact() {
                 <p className={styles.error}>{errors.message}</p>
               )}
             </div>
+            <div className={styles.consentWrapper}>
+              <input
+                type="checkbox"
+                name="dataConsent"
+                id="dataConsent"
+                required
+              />
+              <label htmlFor="dataConsent">
+                {t("contact.form.dataConsent")}{" "}
+                <span
+                  onClick={(e) => openConsentModal(e, "data")}
+                  className={styles.consentToggle}
+                >
+                  {t("contact.form.readMore")}
+                </span>
+              </label>
+            </div>
+            <div className={styles.consentWrapper}>
+              <input
+                type="checkbox"
+                name="marketingConsent"
+                id="marketingConsent"
+              />
+              <label htmlFor="marketingConsent">
+                {t("contact.form.marketingConsent")}{" "}
+                <span
+                  onClick={(e) => openConsentModal(e, "marketing")}
+                  className={styles.consentToggle}
+                >
+                  {t("contact.form.readMore")}
+                </span>
+              </label>
+            </div>
             <Button variant="primary" type="submit">
               {t("contact.form.send")}
             </Button>
@@ -135,8 +193,13 @@ function Contact() {
         </div>
       </div>
       <Modal
+        isOpen={isDataConsentOpen || isMarketingConsentOpen}
+        content={modalContent}
+        onClose={closeConsentModal}
+      />
+      <Modal
         isOpen={formFeedback.isOpen}
-        message={formFeedback.message}
+        content={formFeedback.message}
         onClose={closeModal}
       />
     </section>
